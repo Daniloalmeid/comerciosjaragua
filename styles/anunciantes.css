@@ -1,0 +1,322 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family= Patua +One & display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+:root{
+    --cor0: #29335c;
+    --cor1: #ffc15e;
+    --cor2: #f4faff;
+    --cor3: #00a6a6;
+    --cor4: #9a031e;
+    --cor5: #4f6d7a;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: "patua one", cursive;
+}
+body{
+    background-color: rgb(219, 216, 216);
+    
+}
+section.redessociais{
+    background-color: var(--cor0);
+    margin-bottom: 1px;
+    text-align: center;
+    height: 100px;
+}
+.h1redessociais{
+    position: relative;
+    padding: 10px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: left ;
+    
+}
+img.redes1{
+    position: relative;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    left: 0%;
+    top: 0px;
+}
+
+img.redes1:hover{
+    border: 1px solid #ffc15e;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+    transition: transform 0.4s, border .2s;
+}
+.logo{
+    background-color: var(--cor0);
+}
+.logo1{
+    width: 300px;
+}
+menu#itens{
+    background-color: var(--cor1);
+    padding: 5px;
+    text-align: center;
+}
+menu > ul > li > a.linkmenu{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 3px;
+    
+    
+}
+menu >ul > li > a:hover{
+    background-color: var(--cor0);
+    color: white;
+    border-radius: 10px;
+    transition: color .2s;
+}
+menu > ul > li{
+    display: inline;
+    padding: 5px;
+}
+.banner1{
+    display: block;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.padariapao{
+    color: #ffc15e;
+    text-shadow: 1px 1px 2px black;
+    
+}
+.cabpadaria{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px var(--cor0);
+}
+.dpadaria{
+    text-align: center;
+    padding: 10px;
+    text-justify: auto;
+    text-indent: 30px;
+    font-size: 1.2em;
+}
+.h1nossasfotos{
+    margin-bottom: 8px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(to right,#ffc15e,#da8a08);
+    text-shadow: 2px 2px 5px white;
+}
+.slider{
+    margin: 0 auto;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 250px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 400px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background-color: white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid #29335c;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top: 210px;
+    display: flex;
+    justify-content: center; 
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+.waze{
+   text-align: center;
+}
+.h1waze{
+    margin-top: 4px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(to right,#ffc15e,#da8a08);
+    text-shadow: 2px 2px 5px white;
+}
+.plocalizacao{
+    background-image: linear-gradient(to right,#ffc15e,#da8a08);
+    margin-bottom: 4px;
+    color: black;
+    text-shadow: .2px .2px .2px black;
+    
+}
+.alocalizacao{
+    text-decoration: none;
+}
+.cardapio{
+    text-align: center;
+    margin-top: 10px;
+}
+.h1cardapio{
+    margin-bottom: 8px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(to right,#ffc15e,#da8a08);
+    text-shadow: 2px 2px 5px white;
+}
+.h2faca{
+    padding: 10px;
+    
+}
+.ulpedido{
+    padding: 10px;
+    height: 50px;
+    background-image: linear-gradient(to right,#ffc15e,#da8a08);
+}
+.telwats{
+    padding: 10px;
+    
+}
+.wats{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 146px;
+    top: -41px;
+    border-radius: 50%;
+    
+}
+.tel{
+    position: relative;
+    left: 152px;
+    top: -57px;
+}
+.todosprodutos{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    text-align: center;
+    background-color: #ffc15e;
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+.bacpao{
+   
+    border-radius: 10px 10px 0px 0px;
+}
+.icopao{
+    width: 125px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px 10px 0px 0px;
+
+    
+}
+.ppao{
+    margin-top: px;
+    padding: 1px;
+
+}
+
+.h1redes2{
+    position: relative;
+    padding: 10px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: left ;
+    text-align: center;
+}
+
+
+section.redessociais2{
+    background-color: var(--cor0);
+    margin-bottom: 1px;
+    text-align: center;
+    height: 100px;
+}
+ 
+img.redes2{
+    position: relative;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    left: 0%;
+    top: 0px;
+}
+
+img.redes2:hover{
+    border: 1px solid #ffc15e;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+    transition: transform 0.4s, border .2s;
+}
