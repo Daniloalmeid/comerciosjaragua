@@ -330,9 +330,23 @@ footer{
     padding: 10px;
 
 }
-.footer_contacth1{
-
+.h1footer{
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
+.footer-link{
+    color: white;
+    text-decoration: none;
+    margin-right: 12px;
+    
+}
+.footer-list{
+    padding: 20px;
+}
+#input_group{
+    text-justify: auto;
+}
+
 
 img.redes2{
     width: 40px;
