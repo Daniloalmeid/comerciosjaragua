@@ -317,6 +317,21 @@ section.vagasdeemprego{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
     transition: transform 0.4s, border .2s;
 }
+img.redes2{
+    position: relative;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    left: 0%;
+    top: 0px;
+}
+
+img.redes2:hover{
+    border: 1px solid #ffc15e;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+    transition: transform 0.4s, border .2s;
+}
 
 
 
