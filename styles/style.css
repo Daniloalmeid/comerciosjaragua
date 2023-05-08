@@ -297,7 +297,7 @@ section.vagasdeemprego{
 .vagas{
     margin-top: 3px;
     padding: 10px;
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     height: 300px;
 }
 .bairrojaragua{
@@ -317,13 +317,28 @@ section.vagasdeemprego{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
     transition: transform 0.4s, border .2s;
 }
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background-color: var(--cor0);
+    color: white;
+}
+.footer_contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+
+}
+.footer_contacth1{
+
+}
+
 img.redes2{
-    position: relative;
     width: 40px;
     margin: 5px;
     border-radius: 50%;
-    left: 0%;
-    top: 0px;
+
 }
 
 img.redes2:hover{
