@@ -95,6 +95,10 @@ menu > ul > li{
 .h1contatoredes{
     margin-top: 20px;
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--cor0);
+    color: white;
+    border-radius: 20px;
    
 }
 .redesimg{
