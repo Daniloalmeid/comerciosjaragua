@@ -86,3 +86,185 @@ menu > ul > li{
     padding: 5px;
     
 }
+main > article.boxcomercios{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+ }
+ main > article > div.boxalimentos{
+    width: 270px;
+    height: 130px;
+    margin: 50px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #ffc15e;
+    border-radius: 0px 0px 20px 20px;
+    
+ 
+ }
+ .logoalimentos{
+     position: relative;
+     width: 270px;
+     height: 130px;
+     left: 0px;
+     border-radius: 0px 0px 20px 20px;
+     
+ }
+ .h1comidas{
+     position: relative;
+     width: 270px;
+     border-radius: 5px 5px 0px 0px;
+     padding: 2px;
+     left: -0.7%;
+     top: -166px;
+     background-color: var(--cor1);
+     border-radius: 2px 2px 2px white;
+ }
+ main > article > div.boxanimais{
+     width: 270px;
+     height: 130px;
+     margin: 50px;
+     display: inline-block;
+     background-color: white;
+     border-radius: px;
+     border: 2px solid #ffc15e;
+     border-radius: 0px 0px 20px 20px;
+  
+  }
+  .logoanimais{
+     position: relative;
+     width: 270px;
+     height: 130px;
+     left: 0px;
+     border-radius: 0px 0px 20px 20px;
+ }
+ .h1animais{
+     position: relative;
+     border-radius: 5px;
+     width: 270px;
+     border-radius: 5px 5px 0px 0px;
+     padding: 2px;
+     left: -0.7%;
+     top: -166px;
+     background-color: var(--cor1);
+     border-radius: 2px 2px 2px white;
+     }
+  main > article > div.boxbeleza{
+     width: 270px;
+     height: 130px;
+     margin: 50px;
+     display: inline-block;
+     background-color: white;
+     border-radius: px;
+     border: 2px solid #ffc15e;
+     border-radius: 0px 0px 20px 20px;
+  
+  }
+  .logobeleza{
+     position: relative;
+     width: 270px;
+     height: 130px;
+     left: 0px;
+     border-radius: 0px 0px 20px 20px;
+ }
+ .h1beleza{
+     position: relative;
+     border-radius: 5px;
+     width: 270px;
+     border-radius: 5px 5px 0px 0px;
+     padding: 2px;
+     left: -0.7%;
+     top: -166px;
+     background-color: var(--cor1);
+     border-radius: 2px 2px 2px white;
+     
+     }
+ 
+  main > article > div.casaeconstrucao{
+     width: 270px;
+     height: 130px;
+     margin: 50px;
+     display: inline-block;
+     background-color: white;
+     border-radius: px;
+     border: 2px solid #ffc15e;
+     border-radius: 0px 0px 20px 20px;
+  }
+  .logocasaeconstrucao{
+     position: relative;
+     width: 270px;
+     height: 130px;
+     left: 0px;
+     border-radius: 0px 0px 20px 20px;
+ }
+ .h1casaeconstrucao{
+     position: relative;
+     border-radius: 5px;
+     width: 270px;
+     border-radius: 5px 5px 0px 0px;
+     padding: 2px;
+     left: -0.7%;
+     top: -166px;
+     background-color: var(--cor1);
+     border-radius: 2px 2px 2px white;
+     
+ }
+  main > article > div.boxacademia{
+     width: 270px;
+     height: 130px;
+     margin: 50px;
+     display: inline-block;
+     background-color: white;
+     border-radius: px;
+     border: 2px solid #ffc15e;
+     border-radius: 0px 0px 20px 20px;
+  
+  }
+  .logoacademia{
+     position: relative;
+     width: 270px;
+     height: 130px;
+     left: 0px;
+     border-radius: 0px 0px 20px 20px;
+ }
+ .h1academia{
+     position: relative;
+     border-radius: 5px;
+     width: 270px;
+     border-radius: 5px 5px 0px 0px;
+     padding: 2px;
+     left: -0.7%;
+     top: -166px;
+     background-color: var(--cor1);
+     border-radius: 2px 2px 2px white;
+     }
+  main > article > div.boxlojas{
+     width: 270px;
+     height: 130px;
+     margin: 50px;
+     display: inline-block;
+     background-color: white;
+     border-radius: px;
+     border: 2px solid #ffc15e;
+     border-radius: 0px 0px 20px 20px;
+  
+  }
+  .logolojas{
+     position: relative;
+     width: 270px;
+     height: 130px;
+     left: 0px;
+     border-radius: 0px 0px 20px 20px;
+ }
+ .h1lojas{
+     position: relative;
+     border-radius: 5px;
+     width: 270px;
+     border-radius: 5px 5px 0px 0px;
+     padding: 2px;
+     left: -0.7%;
+     top: -166px;
+     background-color: var(--cor1);
+     border-radius: 2px 2px 2px white;
+     }
