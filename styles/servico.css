@@ -128,7 +128,7 @@ main > article.boxservicos{
      display: inline-block;
      background-color: white;
      border-radius: px;
-     border: 2px solid #ffc15e;
+     border: 2px solid #040404;
      border-radius: 0px 0px 20px 20px;
   
   }
@@ -139,7 +139,7 @@ main > article.boxservicos{
      left: 0px;
      border-radius: 0px 0px 20px 20px;
  }
- .h1animais{
+ .h1barbearia{
      position: relative;
      border-radius: 5px;
      width: 270px;
@@ -147,28 +147,29 @@ main > article.boxservicos{
      padding: 2px;
      left: -0.7%;
      top: -166px;
-     background-color: var(--cor1);
-     border-radius: 2px 2px 2px white;
+     background-color: black;
+     color: white;
+     border-radius: 2px 2px 2px rgb(9, 9, 9);
      }
-  main > article > div.boxbeleza{
+  main > article > div.boxeletricista{
      width: 270px;
      height: 130px;
      margin: 50px;
      display: inline-block;
      background-color: white;
      border-radius: px;
-     border: 2px solid #ffc15e;
+     border: 2px solid #c90b0b;
      border-radius: 0px 0px 20px 20px;
   
   }
-  .logobeleza{
+  .logoeletricista{
      position: relative;
      width: 270px;
      height: 130px;
      left: 0px;
      border-radius: 0px 0px 20px 20px;
  }
- .h1beleza{
+ .h1eletricista{
      position: relative;
      border-radius: 5px;
      width: 270px;
@@ -176,12 +177,13 @@ main > article.boxservicos{
      padding: 2px;
      left: -0.7%;
      top: -166px;
-     background-color: var(--cor1);
+     background-color: #c90b0b;
+     color: white;
      border-radius: 2px 2px 2px white;
      
      }
  
-  main > article > div.casaeconstrucao{
+  main > article > div.servicoautomotivos{
      width: 270px;
      height: 130px;
      margin: 50px;
@@ -191,14 +193,14 @@ main > article.boxservicos{
      border: 2px solid #ffc15e;
      border-radius: 0px 0px 20px 20px;
   }
-  .logocasaeconstrucao{
+  .logoautomotivos{
      position: relative;
      width: 270px;
      height: 130px;
      left: 0px;
      border-radius: 0px 0px 20px 20px;
  }
- .h1casaeconstrucao{
+ .h1automotivos{
      position: relative;
      border-radius: 5px;
      width: 270px;
@@ -210,25 +212,25 @@ main > article.boxservicos{
      border-radius: 2px 2px 2px white;
      
  }
-  main > article > div.boxacademia{
+  main > article > div.boxidiomas{
      width: 270px;
      height: 130px;
      margin: 50px;
      display: inline-block;
      background-color: white;
      border-radius: px;
-     border: 2px solid #ffc15e;
+     border: 2px solid var(--cor4);
      border-radius: 0px 0px 20px 20px;
   
   }
-  .logoacademia{
+  .logoidiomas{
      position: relative;
      width: 270px;
      height: 130px;
      left: 0px;
      border-radius: 0px 0px 20px 20px;
  }
- .h1academia{
+ .h1idiomas{
      position: relative;
      border-radius: 5px;
      width: 270px;
@@ -236,28 +238,29 @@ main > article.boxservicos{
      padding: 2px;
      left: -0.7%;
      top: -166px;
-     background-color: var(--cor1);
+     background-color: var(--cor4);
+     color: white;
      border-radius: 2px 2px 2px white;
      }
-  main > article > div.boxlojas{
+  main > article > div.boxlimpesa{
      width: 270px;
      height: 130px;
      margin: 50px;
      display: inline-block;
      background-color: white;
      border-radius: px;
-     border: 2px solid #ffc15e;
+     border: 2px solid white;
      border-radius: 0px 0px 20px 20px;
   
   }
-  .logolojas{
+  .logolimpesa{
      position: relative;
      width: 270px;
      height: 130px;
      left: 0px;
      border-radius: 0px 0px 20px 20px;
  }
- .h1lojas{
+ .h1limpesa{
      position: relative;
      border-radius: 5px;
      width: 270px;
@@ -265,6 +268,6 @@ main > article.boxservicos{
      padding: 2px;
      left: -0.7%;
      top: -166px;
-     background-color: var(--cor1);
+     background-color:white;
      border-radius: 2px 2px 2px white;
      }
