@@ -54,7 +54,7 @@ img.redes1:hover{
 .logo1{
     width: 300px;
 }
-.h1comercios{
+.h1servicos{
     margin-top: 2px;
     padding: 10px;
     background-color: var(--cor0);
@@ -86,24 +86,24 @@ menu > ul > li{
     padding: 5px;
     
 }
-main > article.boxcomercios{
+main > article.boxservicos{
     display: flex;
     justify-content: center;
     display: inline-block;
     text-align: center;
  }
- main > article > div.boxalimentos{
+ main > article > div.boxsalaobeleza{
     width: 270px;
     height: 130px;
     margin: 50px;
     display: inline-block;
     background-color: white;
-    border: 2px solid #ffc15e;
+    border: 2px solid #f1f0ef;
     border-radius: 0px 0px 20px 20px;
     
  
  }
- .logoalimentos{
+ .logosalao{
      position: relative;
      width: 270px;
      height: 130px;
@@ -111,17 +111,17 @@ main > article.boxcomercios{
      border-radius: 0px 0px 20px 20px;
      
  }
- .h1comidas{
+ .h1salao{
      position: relative;
      width: 270px;
      border-radius: 5px 5px 0px 0px;
      padding: 2px;
      left: -0.7%;
      top: -166px;
-     background-color: var(--cor1);
+     background-color: white;
      border-radius: 2px 2px 2px white;
  }
- main > article > div.boxanimais{
+ main > article > div.boxbarbearia{
      width: 270px;
      height: 130px;
      margin: 50px;
@@ -132,7 +132,7 @@ main > article.boxcomercios{
      border-radius: 0px 0px 20px 20px;
   
   }
-  .logoanimais{
+  .logobarbearia{
      position: relative;
      width: 270px;
      height: 130px;
