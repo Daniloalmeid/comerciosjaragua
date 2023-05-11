@@ -91,8 +91,8 @@ article.alimentosebebidas{
     text-align: center;
 }
 article >div.comercio1{
-    width: 270px;
-    height: 130px;
+    width: 330px;
+    height: 180px;
     margin: 20px;
     display: inline-block;
     background-color: white;
@@ -103,11 +103,68 @@ img.suamarca{
     border-radius: 20px 20px 0px 0px;
 }
 p.alimentos{
+    
     text-justify: auto;
     
 }
 .palimentos{
     text-justify: auto;
-    font-size: .8em;
+    font-size: 1em;
+}
+
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background-color: var(--cor0);
+    color: white;
+}
+.footer_contact{
+  
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+
+}
+.footer_social_media{
+    margin-left: 40px;
+
+}
+.h1footer{
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.footer-link{
+    color: white;
+    
+    
+    
+}
+.footer-list{
+    padding: 30px;
+    margin-left: 0px;
+    font-size: 1.05em;
+    
+}
+
+img.redes2{
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+
+}
+
+img.redes2:hover{
+    border: 1px solid #ffc15e;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+    transition: transform 0.4s, border .2s;
+}
+#footer_copyright{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
 }
     
