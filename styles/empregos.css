@@ -96,15 +96,15 @@ menu > ul > li{
     text-align: center;   background-color: var(--cor0);
 }
 .containeremp{
-    display: inline-block;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    padding: 10px;
-   
     padding: 10px;
     
 }
 .empregos{
+    
     width: 380px;
     height: 270px;
     background-color: white;
