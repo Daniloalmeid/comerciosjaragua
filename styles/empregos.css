@@ -167,14 +167,14 @@ padding: 10px;
 }
 .semana{
     display: flex;
-    margin: 10px;
+    margin: 0px;
     background-color: rgb(17, 53, 215);
 }
 .iconrelogio{
     text-align: center;
     width: 25px;
     height: 25px;
-    margin-right: 7px;
+    margin-right: 5px;
     
 }
 
