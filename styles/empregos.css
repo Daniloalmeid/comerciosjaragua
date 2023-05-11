@@ -96,10 +96,10 @@ menu > ul > li{
     text-align: center;   background-color: var(--cor0);
 }
 .containeremp{
-text-align: center;
-padding: 10px;
-text-align: center;
-padding: 10px;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
 }
 .empregos{
     margin-top: 60px;
@@ -127,7 +127,7 @@ padding: 10px;
 .pbox1{
     position: relative;
     left: 0px;
-    top: 0px;
+    top: 10px;
     text-justify: auto;
 }
 
@@ -144,9 +144,11 @@ padding: 10px;
     grid-template-columns: repeat(2, 1fr);
 }
 .valor{
+    position: relative;
     display: flex;
     margin: 10px;
-    background-color: gray;
+    top: 7px;
+   
 }
 .icondim{
     width: 25px;
@@ -155,9 +157,11 @@ padding: 10px;
     
 }
 .efetivo{
+    position: relative;
     display: flex;
     margin: 10px;
-    background-color: rgb(181, 67, 67);
+    top: 7px;
+   
 }
 .iconclt{
     width: 25px;
@@ -167,14 +171,36 @@ padding: 10px;
 }
 .semana{
     display: flex;
+    position: relative;
+    top: 0px;
     margin: 0px;
-    background-color: rgb(17, 53, 215);
+   
 }
 .iconrelogio{
     text-align: center;
     width: 25px;
     height: 25px;
-    margin-right: 5px;
+    margin-left: 11px;
+    margin-right: 7px;
+}
+.cadastre-se{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.iconcadastro{
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+    
+}
+.h2cadastro{
+   position: relative;
+   top: 20px;
+   color: white;
     
 }
 
