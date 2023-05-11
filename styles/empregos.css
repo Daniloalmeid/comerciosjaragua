@@ -101,10 +101,11 @@ menu > ul > li{
     justify-content: center;
     text-align: center;
     padding: 10px;
+    margin: 10px;
     
 }
 .empregos{
-    
+    margin: 20px;
     width: 380px;
     height: 270px;
     background-color: white;
