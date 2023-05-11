@@ -89,102 +89,101 @@ menu > ul > li{
 .h1vagas{
     margin-top: 2px;
     padding: 10px;
+    margin-bottom: 40px;
     background-color: var(--cor0);
     color: white;
     text-shadow: 6px 6px 10px black;
     text-align: center;   background-color: var(--cor0);
 }
-.h1nossasfotos{
-    margin-bottom: 8px;
-    padding: 10px;
-    color: black;
-    text-align: center;
-    background-image: linear-gradient(to right,#ffc15e,#da8a08);
-    text-shadow: 2px 2px 5px white;
+.containeremp{
+text-align: center;
+padding: 10px;
+text-align: center;
+padding: 10px;
 }
-.slider{
-    margin: 0 auto;
-    width: 400px;
-    height: 250px;
-    overflow: hidden;
+.empregos{
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 0px;
+    display: inline-grid;
+    width: 380px;
+    height: 270px;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid #d70909;
+    box-shadow: 3px 3px 5px var(--cor0);
 }
-.slides{
-    width: 400%;
-    height: 250px;
-    display: flex;
+/*.boxcomercio:hover{
+    transition: transform 0.4s, border .2s; 
+    transform: translate( 6px,-6px);
 }
-.slides input{
-    display: none;
-}
-.slide{
-    width: 25%;
+.comercios:hover{
+    transform: translate( 2px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+    transition: transform 0.4s, border .2s;
+}*/
+.pbox1{
     position: relative;
-    transition: 2s;
+    left: 0px;
+    top: 0px;
+    text-justify: auto;
 }
-.slide img{
-    width: 400px;
+
+.h2comercio{
+    position: relative;
+    left: 0%;
+    top: 0px;
+    color: black;
+
 }
-.manual-navigation{
-    position: absolute;
-    width: 400px;
-    margin-top: -40px;
-    display: flex;
+.containericon{
+    display: grid;
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
 }
-.manual-btn{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-.manual-btn:not(:last-child){
-    margin-right: 20px;
-}
-.manual-btn:hover{
-    background-color: white;
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-.navigation-auto div{
-    border: 2px solid #29335c;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-.navigation-auto{
-    position: absolute;
-    width: 400px;
-    margin-top: 210px;
+.valor{
     display: flex;
-    justify-content: center; 
+    margin: 10px;
+    background-color: gray;
 }
-.navigation-auto div:not(:last-child){
-    margin-right: 20px;
+.icondim{
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: white;
+.efetivo{
+    display: flex;
+    margin: 10px;
+    background-color: rgb(181, 67, 67);
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: white;
+.iconclt{
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: white;
+.semana{
+    display: flex;
+    margin: 10px;
+    background-color: rgb(17, 53, 215);
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: white;
+.iconrelogio{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    
 }
+
+
+
+
+/* 
+Divisao
+*/
 
 footer{
     width: 100%;
