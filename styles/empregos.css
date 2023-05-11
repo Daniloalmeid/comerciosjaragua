@@ -96,7 +96,7 @@ menu > ul > li{
     text-align: center;   background-color: var(--cor0);
 }
 .containeremp{
-    text-align: center;
+    display: inline-block;
     padding: 10px;
     text-align: center;
     padding: 10px;
@@ -190,6 +190,11 @@ menu > ul > li{
     padding: 20px;
     margin: 10px;
     border-radius: 50px;
+    box-shadow: 3px 3px 10px black;
+}
+.cadastre-se:hover{
+    background-color: rgb(66, 143, 66);
+   
 }
 .iconcadastro{
     position: relative;
@@ -202,6 +207,9 @@ menu > ul > li{
    top: 20px;
    color: white;
     
+}
+.linkcadastro{
+    text-decoration: none;
 }
 
 
