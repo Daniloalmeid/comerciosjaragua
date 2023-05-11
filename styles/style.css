@@ -374,6 +374,11 @@ section.vagasdeemprego{
     text-align: center;
     background-color: var(--cor1);
     
+    
+}
+.h1vagasdeemprego{
+    background-color: white;
+    border-radius: 20px;
 }
 .containeremp{
     display: flex;
