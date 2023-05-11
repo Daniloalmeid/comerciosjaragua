@@ -207,7 +207,9 @@ menu > ul > li{
     
 }
 .linkcadastro{
+    position: relative;
     text-decoration: none;
+    top: 13px;
 }
 
 
