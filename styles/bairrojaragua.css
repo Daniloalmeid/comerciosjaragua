@@ -105,21 +105,30 @@ menu > ul > li{
     margin-bottom: 10px;
     text-justify: auto;
     box-shadow: 3px 3px 5px var(--cor0);
-    text-indent: 30px;
+    
 }
 .ptextojaragua{
         width: 90%;
         text-align: center;
         text-align: justify; 
-        text-indent: 30px;
+        text-indent: 0px;
         margin-bottom: 20px; 
         padding: 2px;
         font-family: var(--fonte-padrao);
         
 }
 .bairros{
-    background-image: linear-gradient(to right, #ffc15e,#b98838);
+    position: relative;
+    top: 10px;
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
+}
+#img{
+    margin-right: 10px;
+    margin-left: 8px;
+}
+#bairros{
+    display: flex;
+    background-image: linear-gradient(to right, #ffc15e,#b98838);
 }
