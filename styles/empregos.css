@@ -97,17 +97,14 @@ menu > ul > li{
 }
 .containeremp{
     display: inline-block;
+    
+    text-align: center;
     padding: 10px;
-    margin: auto;
+   
     padding: 10px;
     
 }
 .empregos{
-    margin-top: 60px;
-    margin-right: 20px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    padding: 0px;
     width: 380px;
     height: 270px;
     background-color: white;
