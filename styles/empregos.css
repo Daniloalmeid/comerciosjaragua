@@ -107,7 +107,7 @@ menu > ul > li{
 .empregos{
     margin: 20px;
     width: 380px;
-    height: 270px;
+    height: 195px;
     background-color: white;
     border-radius: 20px;
     border: 4px solid #d70909;
@@ -125,7 +125,7 @@ menu > ul > li{
 .pbox1{
     position: relative;
     left: 0px;
-    top: 10px;
+    top: 5px;
     text-justify: auto;
 }
 
@@ -145,7 +145,7 @@ menu > ul > li{
     position: relative;
     display: flex;
     margin: 10px;
-    top: 7px;
+    top: 0px;
    
 }
 .icondim{
@@ -158,7 +158,7 @@ menu > ul > li{
     position: relative;
     display: flex;
     margin: 10px;
-    top: 7px;
+    top: 0px;
    
 }
 .iconclt{
@@ -170,7 +170,7 @@ menu > ul > li{
 .semana{
     display: flex;
     position: relative;
-    top: 0px;
+    top: -12px;
     margin: 0px;
    
 }
@@ -185,7 +185,7 @@ menu > ul > li{
     display: flex;
     justify-content: center;
     background-color: green;
-    padding: 20px;
+    padding: 2px;
     margin: 10px;
     border-radius: 50px;
     box-shadow: 3px 3px 10px black;
@@ -195,6 +195,7 @@ menu > ul > li{
    
 }
 .iconcadastro{
+    width: 30px;
     position: relative;
     top: 1px;
     margin-right: 10px;
@@ -202,14 +203,14 @@ menu > ul > li{
 }
 .h2cadastro{
    position: relative;
-   top: 20px;
+   top: 0px;
    color: white;
     
 }
 .linkcadastro{
     position: relative;
     text-decoration: none;
-    top: 13px;
+    top: -10px;
 }
 
 
