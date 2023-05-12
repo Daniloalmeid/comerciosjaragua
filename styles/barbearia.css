@@ -183,7 +183,7 @@ body{
     box-shadow: 5px 5px 80px var(--cor1);
 }
 .imgbarbes{
-    width: 50px;
+    width: 100px;
     padding: 10px;
     border-radius: 50%;
 }
