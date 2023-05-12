@@ -1,5 +1,12 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family= Patua +One & display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;1,200&family=Newsreader:wght@200&family=Sofia&display=swap');
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -14,6 +21,8 @@
     --cor5: #4f6d7a;
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: "patua one", cursive;
+    --fonte-redes: 'Sofia', cursive;
+    --fonte-texto: 'Crimson Pro', serif;
 }
 body{
     background-color: rgb(219, 216, 216);
@@ -24,6 +33,7 @@ section.redessociais{
     margin-bottom: 1px;
     text-align: center;
     height: 100px;
+    
 }
 .h1redessociais{
     position: relative;
@@ -31,6 +41,7 @@ section.redessociais{
     color: white;
     text-shadow: 5px 5px 10px black;
     text-align: left ;
+    font-family: var(--fonte-redes);
     
 }
 img.redes1{
@@ -39,7 +50,7 @@ img.redes1{
     margin: 5px;
     border-radius: 50%;
     left: 0%;
-    top: 0px;
+    top: -13px;
 }
 
 img.redes1:hover{
@@ -91,6 +102,7 @@ menu > ul > li{
     padding: 5px;
     color: var(--cor1);
     text-shadow: .8px .8px .8px black;
+    font-family: var(--fonte-padrao);
     
 }
 .bemvindo{
@@ -103,25 +115,27 @@ menu > ul > li{
     margin-bottom: 10px;
     text-justify: auto;
     box-shadow: 3px 3px 5px var(--cor0);
+    text-align: center;
 }
 p.bemvindop{
     width: 90%;
     text-align: center;
     text-align: justify; 
-    text-indent: 30px;
     margin-bottom: 20px; 
     padding: 2px;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-texto);
+    
     
 }
 .boxcomercio{
 text-align: center;
 padding: 10px;
+
 }
 .comercios{
     margin-top: 60px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     padding: 0px;
     display: inline-grid;
@@ -131,6 +145,7 @@ padding: 10px;
     border-radius: 20px;
     border: 4px solid #ffc15e;
     box-shadow: 3px 3px 5px var(--cor0);
+    
 }
 /*.boxcomercio:hover{
     transition: transform 0.4s, border .2s; 
@@ -146,6 +161,8 @@ padding: 10px;
     left: 0px;
     top: -50px;
     text-justify: auto;
+    font-family: var(--fonte-texto);
+    
 }
 .logoloja{
     position: relative;
@@ -159,12 +176,13 @@ padding: 10px;
     left: 0%;
     top: -70px;
     color: var(--cor1);
-    text-shadow: 1px 1px 2px var(--cor0);
+    text-shadow: 1px 1px 2px black;
+    font-family: var(--fonte-padrao);
 }
 .empregos{
     margin-top: 75px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     display: inline-grid;
     width: 330px;
@@ -191,12 +209,13 @@ padding: 10px;
     left: 0%;
     top: -70px;
     color:var(--cor3);
-    text-shadow: 1px 1px 2px var(--cor0);
+    text-shadow: 1px 1px 2px black;
+    font-family: var(--fonte-padrao);
 }
 .servisos{
     margin-top: 75px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     display: inline-grid;
     width: 330px;
@@ -216,7 +235,8 @@ padding: 10px;
     left: 0%;
     top: -70px;
     color: var(--cor4);
-    text-shadow: 1px 1px 2px var(--cor0);
+    text-shadow: 1px 1px 2px black;
+    font-family: var(--fonte-padrao);
 }
 .logoloja3{
     position: relative;
@@ -227,8 +247,8 @@ padding: 10px;
 }
 .anuncie{
     margin-top: 75px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     display: inline-grid;
     width: 330px;
@@ -256,12 +276,13 @@ padding: 10px;
     left: 0%;
     top: -70px;
     color: var(--cor0);
-    text-shadow: 1px 1px 2px var(--cor0);
+    text-shadow: 1px 1px 2px black;
+    font-family: var(--fonte-padrao);
 }
 .compraevenda{
     margin-top: 75px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     display: inline-grid;
     width: 330px;
@@ -289,7 +310,8 @@ padding: 10px;
     left: 0%;
     top: -70px;
     color: #ffc15e;
-    text-shadow: 1px 1px 2px var(--cor0);
+    text-shadow: 1px 1px 2px black;
+    font-family: var(--fonte-padrao);
 }
 a.linkartigos{
     text-decoration: none;
@@ -313,8 +335,8 @@ section.vagasdeemprego{
 
 .bairrojaragua{
     margin-top: 75px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     display: inline-grid;
     width: 330px;
@@ -323,6 +345,7 @@ section.vagasdeemprego{
     border-radius: 20px;
     border: 4px solid #29335c;
     box-shadow: 3px 3px 5px var(--cor0);
+    font-family: var(--fonte-padrao);
 }
 .bairrojaragua:hover{
     transform: translate( 2px, -5px);
@@ -331,8 +354,8 @@ section.vagasdeemprego{
 }
 .picoeparque{
     margin-top: 90px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 30px;
     display: inline-grid;
     width: 330px;
@@ -341,6 +364,7 @@ section.vagasdeemprego{
     border-radius: 20px;
     border: 4px solid var(--cor1);
     box-shadow: 3px 3px 5px var(--cor0);
+    font-family: var(--fonte-padrao);
 }
 .picoeparque:hover{
     transform: translate( 2px, -5px);
@@ -360,13 +384,14 @@ section.vagasdeemprego{
     left: 0%;
     top: -80px;
     color: var(--cor0);
-    text-shadow: 1px 1px 2px var(--cor0);
+    text-shadow: 1px 1px 2px black;
 }
 .ppico{
     position: relative;
     left: 0px;
     top: -75px;
     text-justify: auto;
+    font-family: var(--fonte-texto);
 }
 .vagas{
     margin-top: 3px;
@@ -379,6 +404,7 @@ section.vagasdeemprego{
 .h1vagasdeemprego{
     background-color: white;
     border-radius: 20px;
+    font-family: var(--fonte-padrao);
 }
 .containeremp{
     display: flex;
@@ -412,6 +438,7 @@ section.vagasdeemprego{
     left: 0px;
     top: 5px;
     text-justify: auto;
+    font-family: var(--fonte-texto);
 }
 
 .h2vagasemprego{
@@ -419,6 +446,7 @@ section.vagasdeemprego{
     left: 0%;
     top: 0px;
     color: black;
+    
 
 }
 .containericon{
@@ -492,6 +520,7 @@ section.vagasdeemprego{
     position: relative;
     top: 0px;
     color: white;
+    font-family: var(--fonte-padrao);
     
 }
 .linkcadastro{
@@ -522,6 +551,7 @@ footer{
     margin-left: 40px;
     margin-right: 30px;
     margin-bottom: 20px;
+    font-family: var(--fonte-padrao);
 }
 .footer-link{
     color: white;
