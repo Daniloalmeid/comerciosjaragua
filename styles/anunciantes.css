@@ -95,6 +95,7 @@ menu > ul > li{
 .padariapao{
     color: #ffc15e;
     text-shadow: 1px 1px 2px black;
+    font-family: var(--fonte-padrao);
     
 }
 .cabpadaria{
@@ -113,6 +114,7 @@ menu > ul > li{
     text-justify: auto;
     text-indent: 30px;
     font-size: 1.2em;
+    font-family: var(--fonte-texto);
 }
 .h1nossasfotos{
     margin-bottom: 8px;
@@ -121,6 +123,7 @@ menu > ul > li{
     text-align: center;
     background-image: linear-gradient(to right,#ffc15e,#da8a08);
     text-shadow: 2px 2px 5px white;
+    font-family: var(--fonte-padrao);
 }
 .slider{
     margin: 0 auto;
