@@ -107,6 +107,7 @@ body{
 .imgbanner{
     display:block;
     margin: auto;
+    margin-top: 10px;
     align-items: center;    
 }
 .descricao{
@@ -126,10 +127,22 @@ body{
     text-justify: auto;
 }
 .imgbarbe{
-    width: 330px;
-    height: 180px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
-    margin: 10px;
+}
+.box1{
+    padding: 10px;
+    
+}
+.img1{
+    border: 10px solid white;
+}
+.img2{
+    border: 10px solid white;
+}
+.img3{
+    border: 10px solid white;
 }
