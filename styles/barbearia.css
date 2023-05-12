@@ -152,3 +152,25 @@ body{
 .img3{
     border: 10px solid white;
 }
+#containerprecos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+}
+.barbeprecos{
+    background-color: red;
+    margin: 20px;
+    padding: 20px;
+}
+.barbecontatos{
+    background-color: green;
+    margin: 20px;
+    padding: 20px;
+}
+.barberedes{
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+}
