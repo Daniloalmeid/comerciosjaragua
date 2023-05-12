@@ -156,21 +156,39 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     margin: 10px;
-    background-color: white;
+   
 }
 .barbeprecos{
-    background-color: red;
     margin: 20px;
     padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px var(--cor1);
 }
 .barbecontatos{
-    background-color: green;
     margin: 20px;
     padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px var(--cor1);
+    
 }
 .barberedes{
-    background-color: blue;
     margin: 20px;
     padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px var(--cor1);
+}
+.imgbarbes{
+    padding: 10px;
+    border-radius: 50%;
+}
+.hfont{
+    font-family: var(--fonte-barb);
+}
+.hpfont{
+    font-family: var(--fonte-texto);
 }
