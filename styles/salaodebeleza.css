@@ -1,23 +1,28 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family= Patua +One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;1,200&family=Newsreader:wght@200&family=Sofia&display=swap');
 *{
     padding: 0px;
     margin: 0px;
     
 }
 :root{
---cor0: #29335c;
---cor1: #ffc15e;
---cor2: #f4faff;
---cor3: #00a6a6;
---cor4: #9a031e;
---cor5: #4f6d7a;
---fonte-padrao: arial, verdana, helvetica, sans-serif;
---fonte-destaque: "patua one", cursive;
+    --cor0: #29335c;
+    --cor1: #ffc15e;
+    --cor2: #f4faff;
+    --cor3: #00a6a6;
+    --cor4: #9a031e;
+    --cor5: #4f6d7a;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: "patua one", cursive;
+    --fonte-redes: 'Sofia', cursive;
+    --fonte-texto: 'Crimson Pro', serif;
 }
 body{
     background-color: rgb(219, 216, 216);
-    
 }
 section.redessociais{
     background-color: var(--cor0);
@@ -31,6 +36,7 @@ section.redessociais{
     color: white;
     text-shadow: 5px 5px 10px black;
     text-align: left ;
+    font-family: var(--fonte-redes);
     
 }
 img.redes1{
@@ -39,7 +45,7 @@ img.redes1{
     margin: 5px;
     border-radius: 50%;
     left: 0%;
-    top: 0px;
+    top: -13px;
 }
 
 img.redes1:hover{
@@ -48,19 +54,21 @@ img.redes1:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
     transition: transform 0.4s, border .2s;
 }
-.logo{
-    background-color: var(--cor0);
-}
-.logo1{
-    width: 300px;
-}
-.h1comercios{
+h1#pagalimentos{
     margin-top: 2px;
     padding: 10px;
     background-color: var(--cor0);
     color: white;
     text-shadow: 6px 6px 10px black;
-    text-align: center;   background-color: var(--cor0);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    
+}
+.logo{
+    background-color: var(--cor0);
+}
+.logo1{
+    width: 300px;
 }
 menu#itens{
     background-color: var(--cor1);
@@ -86,52 +94,32 @@ menu > ul > li{
     padding: 5px;
     
 }
-.h1picojaragua{
-    margin: 5px;
-    padding: 5px;
-    background-color: var(--cor0);
-    color: white;
-}
-.bannerpico{
-   text-align: center;
-
-    
-}
-.ppicodojaragua{
-    text-justify: auto;
-    text-indent: 0px;
+article.alimentosebebidas{
     padding: 10px;
-    margin: 5px;
-    text-align: left;
-}
-.textjaragua{
-    width: 70%;
     text-align: center;
-    margin: auto;
+}
+article >div.comercio1{
+    width: 330px;
+    height: 180px;
+    margin: 20px;
+    display: inline-block;
     background-color: white;
+    border: 3px solid #ffc15e;
+    border-radius: 20px;
 }
-.imgtext{
-    display: flex;
-    padding: 10px;
-
+img.suamarca{
+    border-radius: 20px 20px 0px 0px;
 }
-.mapas{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-   
+p.alimentos{
+    
+    text-justify: auto;
     
 }
-.mapas1{
-    justify-content: center;
-position: absolute;
-top: 0;
-left: 0;
-width: 70%;
-height: 70%;
+.palimentos{
+    text-justify: auto;
+    font-size: 1em;
+    font-family: var(--fonte-texto);
 }
-
-
 
 footer{
     width: 100%;
