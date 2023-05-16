@@ -1,5 +1,5 @@
 <?php
-    $dbhos = 'ftp.comerciosjaragua.com.br';
+    $dbhost = 'ftp.comerciosjaragua.com.br';
     $dbUsername = 'comerciosjaragu';
     $dbPassword = 'Danilo150101!'
     $dbname = 'cadastro';
