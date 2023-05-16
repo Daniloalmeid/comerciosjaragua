@@ -61,7 +61,7 @@
                 <input type="email" name="E-mail" id="iemail">
                 <label for="isenha">Senha</label>
                 <input type="password" name="Senha" id="isenha">
-                <input type="submit" value="Cadastar">
+                <input type="submit" value="Cadast">
                 
                 
 

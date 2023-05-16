@@ -4,7 +4,7 @@
     $Password = 'Danilo150101!'
     $Name = 'cadastro';
 
-    $conexao = new mysqli($dbHostname,$dbUsername,$dbPassword,$dbName);
+    $conexao = new mysqli($Hostname,$Username,$Password,$Name);
     if($conexao->connect_errno)
     {
         echo "Erro"
