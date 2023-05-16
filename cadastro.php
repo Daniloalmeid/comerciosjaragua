@@ -55,17 +55,18 @@
         <main id="cadastro">
             <form action="cadastro.php" method="post" id="formcadastro" >
                 <h3>Cadastro</h3>
-                <label for="inome">Nome</label>
+                <label for="inome">Nooooome</label>
                 <input type="text" name="nome" id="inome">
                 <label for="iemail">E-mail</label>
                 <input type="email" name="E-mail" id="iemail">
                 <label for="isenha">Senha</label>
                 <input type="password" name="Senha" id="isenha">
-                <input type="submit" value="Cadast">
+                <input type="submit" value="Cadastro">
                 
                 
 
             </form>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsam laboriosam aperiam earum at tempore iusto itaque necessitatibus cupiditate illo vel eos officiis cum accusamus, illum voluptatum eum id? Accusamus!</p>
         </main>
         <script>
 
