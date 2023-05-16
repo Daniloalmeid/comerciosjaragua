@@ -11,7 +11,7 @@
         echo "Usuario Cadastrado com Sucesso";
     }
     else{
-        echo "Erro".mysqli_connect_error($conexao);
+        echo "Erro de connecxão".mysqli_connect_error($conexao);
     }
     mysqli_close($conexao);
 ?>
