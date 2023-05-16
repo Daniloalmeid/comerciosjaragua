@@ -2,7 +2,7 @@
 $servername= "mysql.comerciosjaragua.com.br";
 $username= "comerciosjaragu";
 $password= "Danilo150101!";
-$database= "comerciosjaragua";
+$database= "cadastro";
 
 // Cria a conexão
 $conexao=mysqli_connect($servername, $username, $password, $database);
