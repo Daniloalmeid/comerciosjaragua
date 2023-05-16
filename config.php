@@ -1,10 +1,10 @@
 <?php
-    $dbHostname = 'http://amysql.f1.k8.com.br/';
-    $dbUsername = 'comerciosjaragu';
-    $dbPassword = 'Danilo150101!'
-    $dbName = 'cadastro';
+    $Hostname = 'http://amysql.f1.k8.com.br/';
+    $Username = 'comerciosjaragu';
+    $Password = 'Danilo150101!'
+    $Name = 'cadastro';
 
-    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+    $conexao = new mysqli($dbHostname,$dbUsername,$dbPassword,$dbName);
     if($conexao->connect_errno)
     {
         echo "Erro"
