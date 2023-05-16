@@ -2,10 +2,10 @@
 $servername = "mysql.comerciosjaragua.com.br";
 $username = "comerciosjaragu";
 $password = "Danilo150101!";
-$database = "cadastro";
+$database = "comerciosjaragua";
 
 // Cria a conexão
-$conn = new mysqli($servername, $username, $password, $database);
+$conexao=new mysqli($servername, $username, $password, $database);
 
 // Verifica se a conexão foi estabelecida com sucesso
 if ($conn->connect_error) {
