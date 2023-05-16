@@ -1,5 +1,5 @@
 <?php
-    $dbHost = 'fd77:f3e2:38a5:c000:a:9e32:d958:92ab';
+    $dbHostname = 'http://amysql.f1.k8.com.br/';
     $dbUsername = 'comerciosjaragu';
     $dbPassword = 'Danilo150101!'
     $dbName = 'cadastro';
