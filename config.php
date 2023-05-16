@@ -1,5 +1,5 @@
 <?php
-$servername = "xmysql.comerciosjaragua.com.br";
+$servername = "mysql.comerciosjaragua.com.br";
 $username = "comerciosjaragu";
 $password = "Danilo150101!";
 $database = "comerciosjaragua";
