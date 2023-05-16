@@ -1,5 +1,5 @@
 <?php
-    $dbHost = 'ftp.comerciosjaragua.com.br';
+    $dbHost = 'http://amysql.f1.k8.com.br';
     $dbUsername = 'comerciosjaragu';
     $dbPassword = 'Danilo150101!'
     $dbName = 'cadastro';
