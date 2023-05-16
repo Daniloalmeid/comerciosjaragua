@@ -1,3 +1,10 @@
+<?php 
+    if(isset($_POST['submit']))
+    $nome = $_POST['nome']
+    $result = mysqli_query($conexao, "INSERT INTO cadastro(nome) VALUES('$nome')");
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
