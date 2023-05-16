@@ -4,5 +4,5 @@
     $dbPassword = 'Danilo150101!'
     $dbName = 'cadastro';
 
-    $conexao = new mysqli($dbhos,$dbUsername,$dbPassword,$dbname)
+    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName)
 ?>
