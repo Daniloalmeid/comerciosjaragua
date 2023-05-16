@@ -97,3 +97,11 @@ menu > ul > li{
     padding: 5px;
     
 }
+#formcadastro{
+display:grid;
+justify-content: center;
+
+}
+#form{
+ 
+}
