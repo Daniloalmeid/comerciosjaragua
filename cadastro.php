@@ -1,3 +1,19 @@
+<?php
+$sql = "SELECT * FROM cadastro";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Loop pelos resultados e exibição dos dados
+    while ($row = $result->fetch_assoc()) {
+        echo "ID: " . $row["id"] . " - Nome: " . $row["nome"] . "<br>";
+    }
+} else {
+    echo "Nenhum resultado encontrado.";
+}
+
+// Fecha a conexão
+$conn->close();
+?>
 
 
 <!DOCTYPE html>
@@ -53,6 +69,8 @@
                     </li>
                 </ul>
             </menu>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis officiis quasi voluptas a exercitationem autem iste debitis eum dolorem ullam laboriosam alias quibusdam voluptates, necessitatibus aliquam praesentium blanditiis quam.</p>
+
         </header>
         <main id="cadastro">
             <form action="cadastro.php" method="post" id="formcadastro" >
