@@ -1,5 +1,5 @@
 <?php
-$servername= "mysql.comerciosjaragua.com.br";
+$servername= "https://amysql.f1.k8.com.br/";
 $username= "comerciosjaragu";
 $password= "Danilo150101!";
 $database= "comerciosjaragua";
