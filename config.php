@@ -1,8 +1,8 @@
 <?php
-    $dbhost = 'ftp.comerciosjaragua.com.br';
+    $dbHost = 'ftp.comerciosjaragua.com.br';
     $dbUsername = 'comerciosjaragu';
     $dbPassword = 'Danilo150101!'
-    $dbname = 'cadastro';
+    $dbName = 'cadastro';
 
     $conexao = new mysqli($dbhos,$dbUsername,$dbPassword,$dbname)
 ?>
