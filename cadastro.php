@@ -73,7 +73,7 @@ $conn->close();
 
         </header>
         <main id="cadastro">
-            <form action="cadastro.php" method="post" id="formcadastro" >
+            <form action="config.php" method="post" id="formcadastro" >
                 <h3>Cadastro</h3>
                 <label for="inome">Nooooome</label>
                 <input type="text" name="nome" id="inome">
