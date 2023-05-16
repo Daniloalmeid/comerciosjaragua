@@ -1,16 +1,14 @@
 <?php
-    $Hostname = 'http://amysql.f1.k8.com.br/';
-    $Username = 'comerciosjaragu';
-    $Password = 'Danilo150101!';
-    $Name = 'cadastro';
+$servername = "https://amysql.f1.k8.com.br/";
+$username = "comerciosjaragu";
+$password = "Danilo150101!";
+$database = "comerciosjaragua";
 
-    $conexao = new mysqli($Hostname,$Username,$Password,$Name);
-    if($conexao->connect_errno)
-    {
-        echo "Erro";
-    }
-    else
-    {
-        echo "conexão efetuada co  sucesso";
-    }
+// Cria a conexão
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Verifica se a conexão foi estabelecida com sucesso
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
 ?>
