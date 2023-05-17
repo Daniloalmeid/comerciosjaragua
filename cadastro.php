@@ -1,10 +1,12 @@
 <?php 
-
+    if(isset($_POST['submit']))
+{
     include("config.php");
 
     $nome=$_POST['nome'];
     $emial=$_POST['email'];
     $senha=$_POST['senha'];
+}
 
     //$result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
 
