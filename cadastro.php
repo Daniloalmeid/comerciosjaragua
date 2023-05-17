@@ -7,7 +7,7 @@
     $senha=$_POST['senha'];
 
 
-    $sql="INSERT INTO cadastro(id, nome, email, senha) VALUES ('$id', '$nome', '$email', '$senha')";
+    $sql = "INSERT INTO cadastro(id, nome, email, senha) VALUES ('$id', '$nome', '$email', '$senha')";
 
     if(mysqli_query($conexao, $sql)){
         echo "Usuario Cadastrado com Sucesso";
