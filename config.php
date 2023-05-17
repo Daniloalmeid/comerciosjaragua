@@ -14,7 +14,7 @@ if($conexao->connect_errno)
    echo "erro";
 }
 else{
-   Echo "conexão efetuada com sucesso";
+   Echo "conexão efetuada com sucesso config";
 }
 
 //if (!$conexao) {
