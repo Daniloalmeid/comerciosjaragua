@@ -8,7 +8,7 @@ $database= "comerciosjaragua";
 $conexao = mysqli_connect($servername, $username, $password, $database);
 
 // Verifica se a conexão foi estabelecida com sucesso
-if (!$conexao) {
-    die("Erro na conexão: " .mysqli_connect_error());
-}
+//if (!$conexao) {
+   // die("Erro na conexão: " .mysqli_connect_error());
+} 
 ?>
