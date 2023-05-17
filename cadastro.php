@@ -1,15 +1,15 @@
 <?php 
 
-    include("config.php");
+    include_once("config.php");
     $id=$_POST['id'];
     $nome=$_POST['nome'];
     $emial=$_POST['email'];
     $senha=$_POST['senha'];
 
 
-    $sql="INSERT INTO cadastro(id, nome, email, senha) VALUES ('$id', '$nome', '$emial', '$senha')";
+    $sql="INSERT INTO cadastro(id, nome, email, senha) VALUES ('$id', '$nome', '$email', '$senha')";
 
-    if(mysqli_query($conexao, $sql, $result)){
+    if(mysqli_query($conexao, $sql)){
         echo "Usuario Cadastrado com Sucesso";
     }
     else{
