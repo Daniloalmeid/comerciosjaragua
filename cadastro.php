@@ -12,7 +12,7 @@
 
     //$sql ="INSERT INTO cadastro(id, nome, email, senha) VALUES ('$id', '$nome', '$email', '$senha')";
 
-    if(mysqli_query($conexao, $sql)){
+    if(mysqli_query($conexao, $result)){
         echo "Usuario Cadastrado com Sucesso";
     }
     else{
