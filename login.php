@@ -13,9 +13,9 @@
 
         if(mysqli_num_rows($result) < 1)
         {
-            unset($_SESSION['email']);
-            unset($_SESSION['senha']);
-            header('location:login.html');
+            //unset($_SESSION['email']);
+            //unset($_SESSION['senha']);
+            //header('location:login.html');
         }
         else
         {
