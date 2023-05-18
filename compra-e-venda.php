@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    if((!isset($SESSION['email']) == true) and(!isset($SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('location:login.html');
+    }
+    $logado = $SESSION['email'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
