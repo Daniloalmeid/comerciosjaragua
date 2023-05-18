@@ -1,12 +1,12 @@
 <?php 
     session_start();
-    if((!isset($SESSION['email']) == true) and(!isset($SESSION['senha']) == true))
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
     {
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
         header('location:login.html');
     }
-    $logado = $SESSION['email'];
+    $logado = $_SESSION['email'];
 
 ?>
 
