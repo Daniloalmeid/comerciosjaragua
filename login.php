@@ -15,7 +15,7 @@
         {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location:login.html');
+            header('Location:compra-e-venda.php');
         }
         else
         {
