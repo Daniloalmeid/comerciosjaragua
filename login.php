@@ -15,7 +15,7 @@
         {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('location:login.html');
+            header('Location:login.html');
         }
         else
         {
