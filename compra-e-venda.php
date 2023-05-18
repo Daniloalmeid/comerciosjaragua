@@ -2,9 +2,9 @@
     session_start();
     if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
     {
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location: compra-e-venda.php');
+        //unset($_SESSION['email']);
+        //unset($_SESSION['senha']);
+        header('Location:compra-e-venda.php');
     }
     $logado = $_SESSION['email'];
 
