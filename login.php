@@ -21,7 +21,7 @@
         {
             $_SESSION['email'] = '$email';
             $_SESSION['senha'] = '$senha';
-            header('Location:compra-e-venda.html');
+            header('Location:compra-e-venda.php');
         }
     }
     else
