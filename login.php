@@ -19,14 +19,10 @@
         }
         else
         {
-            //$_SESSION['email'] = '$email';
-            //$_SESSION['senha'] = '$senha';
-            //header('Location:compra-e-venda.php');
+            $_SESSION['email'] = '$email';
+            $_SESSION['senha'] = '$senha';
+            header('Location:compra-e-venda.php');
         }
-    }
-    else
-    {
-        
     }
 
 ?>
