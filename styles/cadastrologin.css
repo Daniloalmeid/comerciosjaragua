@@ -105,12 +105,21 @@ menu > ul > li{
     color: var(--cor2);
     border-radius: 20px;
     text-shadow: 5px 5px 15px black;
+    border: 2px solid white;
+    
 }
 #h2cadastro{
     text-align: center;
     padding: 10px;
     text-shadow: 2px 2px 5px white;
 }
+#cadastro{
+    
+}
+.body{
+    background-image: linear-gradient(to right, rgb(8, 8, 78), rgb(56, 6, 128) );
+}
+
 #formcadastro{
     width: 300px;
     display: grid;
@@ -121,7 +130,7 @@ menu > ul > li{
     padding: 30px;
     border-radius: 30px;
     border: 10px solid var(--cor0);
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 2px 2px 15px rgb(253, 250, 250);
 
 }
 
