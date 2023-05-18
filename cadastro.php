@@ -28,7 +28,7 @@
     <title>Comécio Jaragua</title>
     <link rel="shortcut icon" href="imagen/favicon.ico" type="image/x-icon">
     <link rel="image_src" href="imagen/favicon.ico"/>
-    <link rel="stylesheet" href="styles/cadastrologin.css">
+    <link rel="stylesheet" href="styles/cadastrophp.css">
 
 </head>
 <!-- Google tag (gtag.js) -->
