@@ -15,13 +15,13 @@
         {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location:compra-e-venda.php');
+            header('Location:login.html');
         }
         else
         {
             $_SESSION['email'] = $email;
             $_SESSION['senha'] = $senha;
-            header('Location:index.html');
+            header('Location:compra-e-venda.php');
         }
     }
 
