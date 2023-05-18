@@ -18,8 +18,8 @@
         }
         else
         {
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
+            $_SESSION['email'] = '$email';
+            $_SESSION['senha'] = '$senha';
             header('Location:cadastro.php');
         }
     }
