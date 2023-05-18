@@ -3,8 +3,8 @@
 
     $nome= $_POST['nome'];
     $email= $_POST['email'];
-    $senha=md5($_POST['senha']
-);
+    $senha=md5($_POST['senha']);
+
 
     //$result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
 
