@@ -7,7 +7,7 @@
         //unset($_SESSION['senha']);
         header('location: login.html');
     }
-    //$logado = $_SESSION['email'];
+    $logado = $_SESSION['email'];
 
 ?>
 
