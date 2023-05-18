@@ -258,5 +258,16 @@ img.redes2:hover{
     padding: 10px;
     background-color: black;
 }
+#voltar{
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--cor0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(249, 246, 246);
+    text-decoration: none;
+}
 
 
