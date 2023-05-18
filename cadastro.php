@@ -11,13 +11,13 @@
 
     $sql ="INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
-    //if(mysqli_query($conexao, $sql)){
-       // echo "Usuario Cadastrado com Sucesso";
-   // }
-   // else{
-       // echo "Erro de connexão ".mysqli_connect_error($conexao);
-    //}
-    //mysqli_close($conexao);
+    if(mysqli_query($conexao, $sql)){
+        echo "Usuario Cadastrado com Sucesso";
+   }
+    else{
+        echo "Erro de connexão ".mysqli_connect_error($conexao);
+    }
+    mysqli_close($conexao);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
