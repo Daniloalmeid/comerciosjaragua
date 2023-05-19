@@ -15,11 +15,11 @@
 
     $sql ="INSERT INTO anuncios(nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
 
-    if(mysqli_query($conexao, $sql)){
-        echo "";
-   }
-    else{
-        echo "Erro de connexão ".mysqli_connect_error($conexao);
-    }
-    mysqli_close($conexao);
+    //if(mysqli_query($conexao, $sql)){
+       // echo "";
+   //}
+    //else{
+        //echo "Erro de connexão ".mysqli_connect_error($conexao);
+    //}
+    //mysqli_close($conexao);
 ?>
