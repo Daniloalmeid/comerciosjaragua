@@ -14,7 +14,8 @@
     
     if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
         // Arquivo movido com sucesso, continue com a inserção no banco de dados
-        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$caminhoArquivo')";
+        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
+        //$caminhoArquivo
     
         if (mysqli_query($conexao, $sql)) {
             echo "Anúncio criado com sucesso.";
