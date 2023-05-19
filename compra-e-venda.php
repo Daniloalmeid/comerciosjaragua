@@ -76,7 +76,7 @@
         
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
-            <form action="compra-e-venda.php" method="post" id="containeranuncios">
+            <form action="anuncios.php" method="post" id="containeranuncios">
                 <label for="inome">Nome</label>
                 <input type="text" name="nome" id="inome">
                 <label for="itelefone">Telefone</label>
