@@ -13,7 +13,7 @@
     //$result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
 
 
-    $sql ="INSERT INTO anuncios(nome,'telefone', email, 'data', 'comentario', 'imagen') VALUES ('$nome', '$email', '$senha')";
+    $sql ="INSERT INTO anuncios(nome, telefone, email, data, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$date', '$comentario', '$imagen')";
 
     if(mysqli_query($conexao, $sql)){
         echo "";
