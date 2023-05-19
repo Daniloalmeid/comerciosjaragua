@@ -119,7 +119,7 @@
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar8">
+                <input type="submit" value="Enviar10">
             </form>
             <div class="anuncios">
             <?php
