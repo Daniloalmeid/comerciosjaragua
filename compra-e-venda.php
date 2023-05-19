@@ -64,12 +64,12 @@
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar1">
             </form>
             <div class="anuncios">
                 <?php
                 $sql = "SELECT * FROM anuncios";
-                $result = $conn->query($sql);
+                $result = $conexao->query($sql);
                 
                 if ($result->num_rows > 0) {
                     // Loop para exibir cada anúncio
@@ -82,7 +82,7 @@
                     echo "Nenhum anúncio encontrado.";
                 }
                 
-                $conn->close();
+                $conexao->close();
                 ?>
                 
             </div>
