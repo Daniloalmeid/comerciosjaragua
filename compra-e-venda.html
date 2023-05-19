@@ -1,15 +1,3 @@
-<?php 
-    session_start();
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-    {
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location:login.html');
-    }
-    $logado = $_SESSION['email'];
-
-?>
-
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
@@ -18,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comércios</title>
     <link rel="shortcut icon" href="../imagen/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/compraevenda.css">
+    <link rel="stylesheet" href="styles/compraevendaanuncios.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WEYMSX0CE"></script>
