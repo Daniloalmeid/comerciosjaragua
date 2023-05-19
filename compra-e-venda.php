@@ -64,11 +64,8 @@
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar4">
+                <input type="submit" value="Enviar5">
             </form>
-            
-                
-            </div>
         </main>
     </body>
     <h1 class="manutencao">Esta pagina esta em manutenção</h1>

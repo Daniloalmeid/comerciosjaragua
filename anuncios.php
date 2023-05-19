@@ -17,13 +17,13 @@
 
 
 
-    //if(mysqli_query($conexao, $sql)){
-       // echo "";
-   //}
-    //else{
-        //echo "Erro de connexão ".mysqli_connect_error($conexao);
-    //}
-    //mysqli_close($conexao);
+    if(mysqli_query($conexao, $sql)){
+       echo "";
+   }
+    else{
+        echo "Erro de connexão ".mysqli_connect_error($conexao);
+    }
+    mysqli_close($conexao);
 
     //anuncios
 
