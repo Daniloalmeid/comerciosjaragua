@@ -38,7 +38,7 @@
                         echo "<h2>" . $row["email"] . "</h2>";
                         echo "<p>" . $row["datas"] . "</p>";
                         echo "<h2>" . $row["comentario"] . "</h2>";
-                        echo "<p>" . $row["imagen"] . "</p>";
+                        echo "<img>" . $row["imagen"] . "</img>";
                          //Aqui você pode exibir outras informações do anúncio, como preço, data, etc.
                     }
                 } else {
