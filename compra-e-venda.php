@@ -27,21 +27,28 @@
 
     //anuncios
 
-    //$sql = "SELECT * FROM anuncios";
-                //$result = $conexao->query($sql);
+    $sql = "SELECT * FROM anuncios";
+                $result = $conexao->query($sql);
                 
-                //if ($result->num_rows > 0) {
-                    // Loop para exibir cada anúncio
-                    //while ($row = $result->fetch_assoc()) {
-                        //echo "<h2>" . $row["titulo"] . "</h2>";
-                        //echo "<p>" . $row["descricao"] . "</p>";
-                        // Aqui você pode exibir outras informações do anúncio, como preço, data, etc.
-                    //}
-                //} else {
-                    //echo "Nenhum anúncio encontrado.";
-                //}
+                if ($result->num_rows > 0) {
+                     //Loop para exibir cada anúncio
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<h2>" . $row["nome"] . "</h2>";
+                        echo "<p>" . $row["telefone"] . "</p>";
+                        echo "<h2>" . $row["email"] . "</h2>";
+                        echo "<p>" . $row["datas"] . "</p>";
+                        echo "<h2>" . $row["comentario"] . "</h2>";
+                        echo "<p>" . $row["imagen"] . "</p>";
+                         //Aqui você pode exibir outras informações do anúncio, como preço, data, etc.
+                    }
+                } else {
+                    echo "Nenhum anúncio encontrado.";
+                }
                 
-                //$conexao->close();
+                $conexao->close();
+
+
+
 ?>
 
 
