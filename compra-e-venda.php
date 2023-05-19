@@ -1,29 +1,60 @@
 <?php 
     include_once("config.php");
+    
+    $nome = $_POST['nome'];
+    $telefone = $_POST['telefone'];
+    $email = $_POST['email'];
+    $datas = $_POST['datas'];
+    $comentario = $_POST['comentario'];
+    
+    // Lidando com o upload de imagens
+    $imagen = $_FILES['imagen'];
+    $nomeArquivo = $imagen['name'];
+    $caminhoArquivo = 'caminho/do/seu/diretorio/' . $nomeArquivo;
+    
+    if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
+        // Arquivo movido com sucesso, continue com a inserção no banco de dados
+        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$caminhoArquivo')";
+    
+        if (mysqli_query($conexao, $sql)) {
+            echo "Anúncio criado com sucesso.";
+        } else {
+            echo "Erro de conexão: " . mysqli_error($conexao);
+        }
+    } else {
+        echo "Erro ao fazer upload da imagem.";
+    }
+    
+    mysqli_close($conexao);
+    
+    
 
-    $nome= $_POST['nome'];
-    $telefone= $_POST['telefone'];
-    $email= $_POST['email'];
-    $datas= $_POST['datas'];
-    $comentario= $_POST['comentario'];
-    $imagen= $_POST['imagen'];
+    //meu codigo
+    //include_once("config.php");
+
+    //$nome= $_POST['nome'];
+    //$telefone= $_POST['telefone'];
+    //$email= $_POST['email'];
+    //$datas= $_POST['datas'];
+    //$comentario= $_POST['comentario'];
+    //$imagen= $_POST['imagen'];
     
 
 
     //$result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
 
 
-    $sql ="INSERT INTO anuncios(nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
+    //$sql ="INSERT INTO anuncios(nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
 
 
 
-    if(mysqli_query($conexao, $sql)){
+    //if(mysqli_query($conexao, $sql)){
        echo "";
-   }
-    else{
-        echo "Erro de connexão ".mysqli_connect_error($conexao);
-    }
-    mysqli_close($conexao);
+   //}
+    //else{
+        //echo "Erro de connexão ".mysqli_connect_error($conexao);
+    //}
+    //mysqli_close($conexao);
 
     //anuncios
 
@@ -46,10 +77,10 @@
                 //}
                 
                 //$conexao->close();
-
-
-
 ?>
+
+
+
 
 
 
@@ -105,7 +136,8 @@
         
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
-            <form action="compra-e-venda.php" method="post" id="containeranuncios">
+        <form action="compra-e-venda.php" method="post" id="containeranuncios" enctype="multipart/form-data">
+
                 <label for="inome">Nome</label>
                 <input type="text" name="nome" id="inome">
                 <label for="itelefone">Telefone</label>
