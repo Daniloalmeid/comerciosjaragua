@@ -64,26 +64,9 @@
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar2">
+                <input type="submit" value="Enviar3">
             </form>
-            <div class="anuncios">
-                <?php
-                $sql = "SELECT * FROM anuncios";
-                $result = $conexao->query($sql);
-                
-                if ($result->num_rows > 0) {
-                    // Loop para exibir cada anúncio
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<h2>" . $row["titulo"] . "</h2>";
-                        echo "<p>" . $row["descricao"] . "</p>";
-                        // Aqui você pode exibir outras informações do anúncio, como preço, data, etc.
-                    }
-                } else {
-                    echo "Nenhum anúncio encontrado.";
-                }
-                
-                $conexao->close();
-                ?>
+            
                 
             </div>
         </main>

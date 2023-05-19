@@ -25,19 +25,21 @@
     //}
     //mysqli_close($conexao);
 
-    $sql = "SELECT * FROM anuncios";
-                $result = $conexao->query($sql);
+    //anuncios
+
+    //$sql = "SELECT * FROM anuncios";
+                //$result = $conexao->query($sql);
                 
-                if ($result->num_rows > 0) {
+                //if ($result->num_rows > 0) {
                     // Loop para exibir cada anúncio
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<h2>" . $row["titulo"] . "</h2>";
-                        echo "<p>" . $row["descricao"] . "</p>";
+                    //while ($row = $result->fetch_assoc()) {
+                        //echo "<h2>" . $row["titulo"] . "</h2>";
+                        //echo "<p>" . $row["descricao"] . "</p>";
                         // Aqui você pode exibir outras informações do anúncio, como preço, data, etc.
-                    }
-                } else {
-                    echo "Nenhum anúncio encontrado.";
-                }
+                    //}
+                //} else {
+                    //echo "Nenhum anúncio encontrado.";
+                //}
                 
-                $conexao->close();
+                //$conexao->close();
 ?>
