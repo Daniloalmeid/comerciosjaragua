@@ -1,16 +1,3 @@
-<?php 
-    session_start();
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-    {
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location:login.html');
-    }
-    $logado = $_SESSION['senha'];
-    $logado = $_SESSION['email'];
-
-?>
-
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
@@ -19,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comércios</title>
     <link rel="shortcut icon" href="../imagen/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/compraevenda.css">
+    <link rel="stylesheet" href="styles/compraevendaanuncios.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WEYMSX0CE"></script>
@@ -63,15 +50,42 @@
         
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
-            <section id="cadastro">
-                <label for="nome">Nome</label>
-                <input type="text" name="Nome" id="idnome">
-                <label for="e-mal">E-mail</label>
-                <input type="email" name="E-mail" id="idemail">
-                <label for="Senha">Senha</label>
-                <input type="password" name="Senha" id="idsenha">
-                <input type="button" value="Envviar">
-            </section>
+            <form action="anuncios.php" method="post" id="containeranuncios">
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="telefone" id="itelefone">
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail">
+                <label for="idate">Data</label>
+                <input type="date" name="datas" id="idate">
+                <label for="icomentario">Comentário</label>
+                <input type="text" name="comentario" id="icomentario">
+                <label for="iimagen">Fotos</label>
+                <input type="file" name="imagen" id="iimagen">
+                <label for="ianunciar">Anunciar</label>
+                <input type="submit" value="Enviar">
+            </form>
+            <div class="anuncios">
+                <?php
+                $sql = "SELECT * FROM anuncios";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    // Loop para exibir cada anúncio
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<h2>" . $row["titulo"] . "</h2>";
+                        echo "<p>" . $row["descricao"] . "</p>";
+                        // Aqui você pode exibir outras informações do anúncio, como preço, data, etc.
+                    }
+                } else {
+                    echo "Nenhum anúncio encontrado.";
+                }
+                
+                $conn->close();
+                ?>
+                
+            </div>
         </main>
     </body>
     <h1 class="manutencao">Esta pagina esta em manutenção</h1>
