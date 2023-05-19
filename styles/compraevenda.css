@@ -86,6 +86,10 @@ menu > ul > li{
     padding: 5px;
     
 }
+#containeranuncios{
+    display: grid;
+    justify-content: center;
+}
 .manutencao{
   background-color: red;
   text-align: center;
