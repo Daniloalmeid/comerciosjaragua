@@ -4,7 +4,7 @@
     $nome= $_POST['nome'];
     $telefone= $_POST['telefone'];
     $email= $_POST['email'];
-    $date= $_POST['data'];
+    $datas= $_POST['datas'];
     $comentario= $_POST['comentario'];
     $imagen= $_POST['imagen'];
     
@@ -13,7 +13,7 @@
     //$result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
 
 
-    $sql ="INSERT INTO anuncios(nome, telefone, email, data, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$date', '$comentario', '$imagen')";
+    $sql ="INSERT INTO anuncios(nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
 
     if(mysqli_query($conexao, $sql)){
         echo "";
