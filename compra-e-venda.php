@@ -1,3 +1,29 @@
+<?php 
+    include_once("config.php");
+
+    $nome= $_POST['nome'];
+    $telefone= $_POST['telefone'];
+    $email= $_POST['email'];
+    $datas= $_POST['datas'];
+    $comentario= $_POST['comentario'];
+    $imagen= $_POST['imagen'];
+    
+
+
+    //$result = mysqli_query($conexao, "INSERT INTO cadastro(nome, email, senha) VALUES ('$nome', '$email', '$senha')");
+
+
+    $sql ="INSERT INTO anuncios(nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
+
+    //if(mysqli_query($conexao, $sql)){
+       // echo "";
+   //}
+    //else{
+        //echo "Erro de connexão ".mysqli_connect_error($conexao);
+    //}
+    //mysqli_close($conexao);
+?>
+
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
@@ -50,7 +76,7 @@
         
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
-            <form action="anuncios.php" method="post" id="containeranuncios">
+            <form action="compra-e-venda.php" method="post" id="containeranuncios">
                 <label for="inome">Nome</label>
                 <input type="text" name="nome" id="inome">
                 <label for="itelefone">Telefone</label>
