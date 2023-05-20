@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar3">
+                <input type="submit" value="Enviar">
             </form>
             <section>
                 <?php 
@@ -176,7 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<p>E-mail: $email</p>";
                             echo "<p>Data: $datas</p>";
                             echo "<p>Comentário: $comentario</p>";
-                            echo "<img src='compraevenda/$nomeArquivo' alt='Imagem do anúncio'>";
+                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
                             echo "</div>";
                         }
                     } else {
