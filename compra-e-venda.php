@@ -1,5 +1,8 @@
 <?php
 include_once("config.php");
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
@@ -13,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $caminhoImagem = 'compraevenda/' . $imagem;
 
     if (move_uploaded_file($_FILES['imagen']['tmp_name'], $caminhoImagem)) {
-        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', ''$nomeArquivo'')";
+        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
         $nomeArquivo = basename($caminhoArquivo);
 
 
