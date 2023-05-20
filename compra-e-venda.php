@@ -180,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<p>E-mail: $email</p>";
                             echo "<p>Data: $datas</p>";
                             echo "<p>Comentário: $comentario</p>";
-                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
+                            echo "<img src='compraevenda/<?php echo $imagem; ?>' alt='Imagem do anúncio'>";
                             echo "</div>";
                         }
                     } else {
