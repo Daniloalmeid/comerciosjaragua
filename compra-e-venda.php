@@ -13,7 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $caminhoImagem = 'compraevenda/' . $imagem;
 
     if (move_uploaded_file($_FILES['imagen']['tmp_name'], $caminhoImagem)) {
-        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagem')";
+        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$caminhoArquivo')";
+
 
         if (mysqli_query($conexao, $sql)) {
             echo "Anúncio criado com sucesso.";
