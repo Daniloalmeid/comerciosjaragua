@@ -11,22 +11,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $datas = $_POST['datas'];
     $comentario = $_POST['comentario'];
     
+    
     // Lidando com o upload de imagens
-    $imagem = $_FILES['imagen']['name'];
-    $caminhoImagem = 'compraevenda/' . $imagem;
+if ($_FILES['imagen']['error'] === UPLOAD_ERR_OK) {
+    $imagen = $_FILES['imagen'];
+    $nomeArquivo = $imagen['name'];
+    $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
 
-    if (move_uploaded_file($_FILES['imagen']['tmp_name'], $caminhoImagem)) {
+    if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
+        // Arquivo movido com sucesso, continue com a inserção no banco de dados
         $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
-        $nomeArquivo = basename($caminhoArquivo);
-
-
+        
         if (mysqli_query($conexao, $sql)) {
             echo "Anúncio criado com sucesso.";
         } else {
-            echo "Erro ao criar o anúncio: " . mysqli_error($conexao);
+            echo "Erro de conexão: " . mysqli_error($conexao);
         }
     } else {
         echo "Erro ao fazer upload da imagem.";
+    }
+} else {
+    // Não foi feito upload de imagem, continue com a inserção no banco de dados sem a imagem
+    $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario')";
+
+    if (mysqli_query($conexao, $sql)) {
+        echo "Anúncio criado com sucesso.";
+    } else {
+        echo "Erro de conexão: " . mysqli_error($conexao);
     }
 }
 
