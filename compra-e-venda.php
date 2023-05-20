@@ -152,7 +152,7 @@
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar1">
+                <input type="submit" value="Enviar2">
             </form>
             <div class="anuncios">
             
