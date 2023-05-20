@@ -179,7 +179,7 @@ mysqli_close($conexao);
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar1">
             </form>
             
 
