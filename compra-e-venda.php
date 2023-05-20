@@ -158,9 +158,23 @@
                 <input type="submit" value="Enviar1">
             </form>
            <!-- Aqui está o código do formulário para criar os anúncios -->
-<form action="compra-e-venda.php" method="post" id="containeranuncios">
-    <!-- Seus campos do formulário aqui -->
+           <form action="compra-e-venda.php" method="post" id="containeranuncios">
+    <label for="inome">Nome</label>
+    <input type="text" name="nome" id="inome">
+    <label for="itelefone">Telefone</label>
+    <input type="tel" name="telefone" id="itelefone">
+    <label for="iemail">E-mail</label>
+    <input type="email" name="email" id="iemail">
+    <label for="idate">Data</label>
+    <input type="date" name="datas" id="idate">
+    <label for="icomentario">Comentário</label>
+    <input type="text" name="comentario" id="icomentario">
+    <label for="iimagen">Fotos</label>
+    <input type="file" name="imagen" id="iimagen">
+    <label for="ianunciar">Anunciar</label>
+    <input type="submit" value="Enviar">
 </form>
+
 
 <!-- Exibição dos anúncios -->
 <?php include_once("exibir-anuncios.php"); ?>
