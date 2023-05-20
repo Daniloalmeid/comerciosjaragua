@@ -10,7 +10,7 @@
     // Lidando com o upload de imagens
     $imagen = $_FILES['imagen'];
     $nomeArquivo = $imagen['name'];
-    $caminhoArquivo = 'caminho/do/seu/diretorio/' . $nomeArquivo;
+    $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
     
     if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
         // Arquivo movido com sucesso, continue com a inserção no banco de dados
