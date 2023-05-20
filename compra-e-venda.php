@@ -165,6 +165,9 @@
     <?php
     include_once("config.php");
 
+    // Inserir o código para salvar o anúncio no banco de dados aqui
+
+    // Recuperar os anúncios do banco de dados
     $sql = "SELECT * FROM anuncios";
     $resultado = mysqli_query($conexao, $sql);
 
@@ -184,7 +187,7 @@
             echo "<p>E-mail: $email</p>";
             echo "<p>Data: $datas</p>";
             echo "<p>Comentário: $comentario</p>";
-            echo "<img src='$imagem' alt='Imagem do anúncio'>";
+            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
             echo "</div>";
         }
     } else {
