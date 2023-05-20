@@ -155,7 +155,7 @@
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
                 <label for="ianunciar">Anunciar</label>
-                <input type="submit" value="Enviar2">
+                <input type="submit" value="Enviar">
             </form>
             <!-- Aqui está o código do formulário para criar os anúncios -->
 <form action="compra-e-venda.php" method="post" id="containeranuncios">
