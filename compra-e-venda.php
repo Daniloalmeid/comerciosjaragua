@@ -157,7 +157,7 @@
                 <label for="ianunciar">Anunciar</label>
                 <input type="submit" value="Enviar3">
             </form>
-            </section>
+            
 
 <!-- Seção de exibição de anúncios -->
 <section id="exibir-anuncios">
