@@ -151,3 +151,7 @@ img.redes2:hover{
     padding: 10px;
     background-color: black;
 }
+#containeranuncios{
+    background-color: var(--cor1);
+    color: red;
+}

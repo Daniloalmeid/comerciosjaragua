@@ -95,6 +95,32 @@ menu > ul > li{
   text-align: center;
   margin: 50px;
 }
+#containeranuncios{
+    width: 330px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--cor1);
+    padding: 10px;
+    
+}
+.box1{
+    width: 165px;
+    display: grid;
+    margin: auto;
+}
+.box2{
+    text-align: center;
+    width: 165px;
+    display: grid;
+    margin: auto;
+}
+#icomentario{
+    width: 100px;  
+    height: 100px; 
+}
 
 footer{
     width: 100%;
