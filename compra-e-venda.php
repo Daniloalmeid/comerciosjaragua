@@ -5,7 +5,7 @@ include_once("config.php");
     error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $titulo = $row['titulo'];
+    $titulo = $_POST['titulo'];
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
