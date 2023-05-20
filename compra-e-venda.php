@@ -1,5 +1,5 @@
 <?php 
-    
+    include_once("config.php");
     
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
