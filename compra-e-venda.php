@@ -5,6 +5,7 @@ include_once("config.php");
     error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $titulo = $row['titulo'];
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
@@ -20,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
         // Arquivo movido com sucesso, continue com a inserção no banco de dados
-        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
+        $sql = "INSERT INTO anuncios ( titulo, nome, telefone, email, datas, comentario, imagen) VALUES ( '$titulo''$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
 
         if (mysqli_query($conexao, $sql)) {
             echo "Anúncio criado com sucesso.";
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } elseif ($imagen['error'] === UPLOAD_ERR_NO_FILE) {
     // Não foi feito upload de imagem, continue com a inserção no banco de dados sem a imagem
-    $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario')";
+    $sql = "INSERT INTO anuncios (titulo, nome, telefone, email, datas, comentario) VALUES ( '$titulo''$nome', '$telefone', '$email', '$datas', '$comentario')";
 
     if (mysqli_query($conexao, $sql)) {
         echo "Anúncio criado com sucesso.";
@@ -158,8 +159,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
         <form action="compra-e-venda.php" method="post" id="containeranuncios" enctype="multipart/form-data">
-
-                <label for="inome">Nome</label>
+                <label for="ititulo">Titulo do Anúncio</label>
+                <input type="text" name="titulo" id="ititulo">    
+                <label for="inome">Nome do Vendedor</label>
                 <input type="text" name="nome" id="inome">
                 <label for="itelefone">Telefone</label>
                 <input type="tel" name="telefone" id="itelefone">
@@ -167,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="email" name="email" id="iemail">
                 <label for="idate">Data</label>
                 <input type="date" name="datas" id="idate">
-                <label for="icomentario">Comentário</label>
+                <label for="icomentario">Descrição do Produto</label>
                 <input type="text" name="comentario" id="icomentario">
                 <label for="iimagen">Fotos</label>
                 <input type="file" name="imagen" id="iimagen">
@@ -181,6 +183,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     
                     if (mysqli_num_rows($resultado) > 0) {
                         while ($row = mysqli_fetch_assoc($resultado)) {
+                            $titulo = $row['titulo'];
                             $nome = $row['nome'];
                             $telefone = $row['telefone'];
                             $email = $row['email'];
@@ -189,7 +192,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $imagem = $row['imagen'];
                     
                             echo "<div>";
-                            echo "<h3>$nome</h3>";
+                            echo "<h3>$titulo</h3>";
+                            echo "<p>$nome</p>";
                             echo "<p>Telefone: $telefone</p>";
                             echo "<p>E-mail: $email</p>";
                             echo "<p>Data: $datas</p>";
