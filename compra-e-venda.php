@@ -1,6 +1,7 @@
-<?php 
-    include_once("config.php");
-    
+<?php
+include_once("config.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
@@ -8,55 +9,50 @@
     $comentario = $_POST['comentario'];
     
     // Lidando com o upload de imagens
-    $imagen = $_FILES['imagen'];
-    $nomeArquivo = $imagen['name'];
-    $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
-    
-    if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
-        // Arquivo movido com sucesso, continue com a inserção no banco de dados
-        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagen')";
-        //$caminhoArquivo
-    
+    $imagem = $_FILES['imagen']['name'];
+    $caminhoImagem = 'compraevenda/' . $imagem;
+
+    if (move_uploaded_file($_FILES['imagen']['tmp_name'], $caminhoImagem)) {
+        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$imagem')";
+
         if (mysqli_query($conexao, $sql)) {
             echo "Anúncio criado com sucesso.";
         } else {
-            echo "Erro de conexão: " . mysqli_error($conexao);
+            echo "Erro ao criar o anúncio: " . mysqli_error($conexao);
         }
     } else {
         echo "Erro ao fazer upload da imagem.";
     }
-    
-    mysqli_close($conexao);
+}
 
-    //codogo novo
-    // Recuperar os anúncios do banco de dados
-    $sql = "SELECT * FROM anuncios";
-    $resultado = mysqli_query($conexao, $sql);
+$sql = "SELECT * FROM anuncios";
+$resultado = mysqli_query($conexao, $sql);
 
-    if (mysqli_num_rows($resultado) > 0) {
-        while ($row = mysqli_fetch_assoc($resultado)) {
-            $nome = $row['nome'];
-            $telefone = $row['telefone'];
-            $email = $row['email'];
-            $datas = $row['datas'];
-            $comentario = $row['comentario'];
-            $imagem = $row['imagen'];
+if (mysqli_num_rows($resultado) > 0) {
+    while ($row = mysqli_fetch_assoc($resultado)) {
+        $nome = $row['nome'];
+        $telefone = $row['telefone'];
+        $email = $row['email'];
+        $datas = $row['datas'];
+        $comentario = $row['comentario'];
+        $imagem = $row['imagen'];
 
-            // Exiba os dados do anúncio
-            echo "<div>";
-            echo "<h3>$nome</h3>";
-            echo "<p>Telefone: $telefone</p>";
-            echo "<p>E-mail: $email</p>";
-            echo "<p>Data: $datas</p>";
-            echo "<p>Comentário: $comentario</p>";
-            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
-            echo "</div>";
-        }
-    } else {
-        echo "Nenhum anúncio encontrado.";
+        echo "<div>";
+        echo "<h3>$nome</h3>";
+        echo "<p>Telefone: $telefone</p>";
+        echo "<p>E-mail: $email</p>";
+        echo "<p>Data: $datas</p>";
+        echo "<p>Comentário: $comentario</p>";
+        echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
+        echo "</div>";
     }
+} else {
+    echo "Nenhum anúncio encontrado.";
+}
 
-    mysqli_close($conexao);
+mysqli_close($conexao);
+
+
 
     
     
