@@ -12,35 +12,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $comentario = $_POST['comentario'];
     
     // Lidando com o upload de imagens
-    $imagen = $_FILES['imagen'];
-    if ($imagen['error'] === UPLOAD_ERR_OK) {
-        $nomeArquivo = $imagen['name'];
-        $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
-    
-        if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
-            // Arquivo movido com sucesso, continue com a inserção no banco de dados
-            $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
-    
-            if (mysqli_query($conexao, $sql)) {
-                echo "Anúncio criado com sucesso.";
-            } else {
-                echo "Erro ao inserir anúncio no banco de dados: " . mysqli_error($conexao);
-            }
-        } else {
-            echo "Erro ao mover o arquivo de imagem.";
-        }
-    } elseif ($imagen['error'] === UPLOAD_ERR_NO_FILE) {
-        // Não foi feito upload de imagem, continue com a inserção no banco de dados sem a imagem
-        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario')";
-    
+    $imagem = $_FILES['imagen']['name'];
+    $caminhoImagem = 'compraevenda/' . $imagem;
+
+    if (move_uploaded_file($_FILES['imagen']['tmp_name'], $caminhoImagem)) {
+        $sql = "INSERT INTO anuncios (nome, telefone, email, datas, comentario, imagen) VALUES ('$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
+        $nomeArquivo = basename($caminhoArquivo);
+
+
         if (mysqli_query($conexao, $sql)) {
             echo "Anúncio criado com sucesso.";
         } else {
-            echo "Erro ao inserir anúncio no banco de dados: " . mysqli_error($conexao);
+            echo "Erro ao criar o anúncio: " . mysqli_error($conexao);
         }
     } else {
-        echo "Erro no upload da imagem: " . $imagen['error'];
+        echo "Erro ao fazer upload da imagem.";
     }
+}
+
 
 
 
