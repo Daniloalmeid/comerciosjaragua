@@ -29,7 +29,35 @@
     mysqli_close($conexao);
 
     //codogo novo
-    
+    // Recuperar os anúncios do banco de dados
+    $sql = "SELECT * FROM anuncios";
+    $resultado = mysqli_query($conexao, $sql);
+
+    if (mysqli_num_rows($resultado) > 0) {
+        while ($row = mysqli_fetch_assoc($resultado)) {
+            $nome = $row['nome'];
+            $telefone = $row['telefone'];
+            $email = $row['email'];
+            $datas = $row['datas'];
+            $comentario = $row['comentario'];
+            $imagem = $row['imagen'];
+
+            // Exiba os dados do anúncio
+            echo "<div>";
+            echo "<h3>$nome</h3>";
+            echo "<p>Telefone: $telefone</p>";
+            echo "<p>E-mail: $email</p>";
+            echo "<p>Data: $datas</p>";
+            echo "<p>Comentário: $comentario</p>";
+            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
+            echo "</div>";
+        }
+    } else {
+        echo "Nenhum anúncio encontrado.";
+    }
+
+    mysqli_close($conexao);
+
     
     
 
@@ -159,44 +187,7 @@
             </form>
             
 
-            <!-- Seção de exibição de anúncios -->
-            <section id="exibir-anuncios">
-                <h2>Anúncios</h2>
-                <?php
-                include_once("config.php");
-
-                // Inserir o código para salvar o anúncio no banco de dados aqui
-
-                // Recuperar os anúncios do banco de dados
-                $sql = "SELECT * FROM anuncios";
-                $resultado = mysqli_query($conexao, $sql);
-
-                if (mysqli_num_rows($resultado) > 0) {
-                    while ($row = mysqli_fetch_assoc($resultado)) {
-                        $nome = $row['nome'];
-                        $telefone = $row['telefone'];
-                        $email = $row['email'];
-                        $datas = $row['datas'];
-                        $comentario = $row['comentario'];
-                        $imagem = $row['imagen'];
-
-                        // Exiba os dados do anúncio
-                        echo "<div>";
-                        echo "<h3>$nome</h3>";
-                        echo "<p>Telefone: $telefone</p>";
-                        echo "<p>E-mail: $email</p>";
-                        echo "<p>Data: $datas</p>";
-                        echo "<p>Comentário: $comentario</p>";
-                        echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
-                        echo "</div>";
-                    }
-                } else {
-                    echo "Nenhum anúncio encontrado.";
-                }
-
-                mysqli_close($conexao);
-                ?>
-            </section>
+            
 
 
 
