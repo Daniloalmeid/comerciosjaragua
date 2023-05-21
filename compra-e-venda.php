@@ -199,8 +199,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section style>";
-                            echo "<div class='containeranunciantes'>";
+                            echo "<section>";
+                            echo "<div>";
                             echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
                             echo "<p>Telefone: $telefone</p>";
