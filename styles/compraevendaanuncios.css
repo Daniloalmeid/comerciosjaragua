@@ -143,6 +143,19 @@ menu > ul > li{
 #enviar:hover{
     background-color: var(--cor4);
 }
+#containeranunciantes{
+    width: 330px;
+    height: 180px;
+    display: grid;
+    margin: auto;
+    
+    background-color: #9a031e;
+}
+
+#h3anunciantes{
+    text-align: center;
+    padding: 10px;
+}
 
 
 
