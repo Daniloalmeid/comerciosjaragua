@@ -144,8 +144,8 @@ menu > ul > li{
     background-color: var(--cor4);
 }
 #containeranunciantes{
-    width: 330px;
-    height: 180px;
+    width: 290px;
+    height: 400px;
     display: grid;
     margin: auto;
     
@@ -153,10 +153,29 @@ menu > ul > li{
 }
 
 #h3anunciantes{
+    position: relative;
+    top: 251px;
+    left: 0px;
     text-align: center;
     padding: 10px;
 }
-
+#dadosanunciantes{
+    position: relative;
+    padding: 10px;
+    top: -30%;
+    left: 0px;
+}
+#imganunciantes{
+    display: grid;
+    justify-content: center;
+}
+#imganunciantes1{
+    position: relative;
+    top: -105%;
+    left: 0px;
+    width: 260px;
+    height: 175px ;
+}
 
 
 
