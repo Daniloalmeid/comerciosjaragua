@@ -198,9 +198,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $datas = $row['datas'];
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
-
-                            echo "<section>";
-                            echo "<div>";
+                            
+                            echo "<section class='containeranuncios'>";
+                            echo "<div";
                             echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
                             echo "<p>Telefone: $telefone</p>";
@@ -210,6 +210,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
                             echo "</div>";
                             echo "</section>";
+                            
                         }
                     } else {
                         echo "Nenhum anúncio encontrado.";
