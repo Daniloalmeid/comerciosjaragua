@@ -160,7 +160,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <main>
         <section id="Anunciantes">
             <form action="compra-e-venda.php" method="post" id="containeranuncios" enctype="multipart/form-data">
-            <div class="box1">
+                    <div class="box1">
                         <label for="ititulo">Titulo do Anúncio</label>
                         <input type="text" name="titulo" id="ititulo">
                         <label for="inome">Nome do Vendedor</label>
