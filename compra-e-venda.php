@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
-        <section id="Anunciantes">
+        <section id="anunciantes">
             <form action="compra-e-venda.php" method="post" id="containeranuncios" enctype="multipart/form-data">
             <div class="box1">
                         <label for="ititulo">Titulo do Anúncio</label>
@@ -198,7 +198,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $datas = $row['datas'];
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
-                                
+
+                            echo "<section id="containeranunciantes">";
                             echo "<div>";
                             echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
@@ -208,6 +209,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<p>Comentário: $comentario</p>";
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
                             echo "</div>";
+                            echo "</section>";
                         }
                     } else {
                         echo "Nenhum anúncio encontrado.";
@@ -218,6 +220,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 ?>
             </section>
+            <section></section>
             
 
             
