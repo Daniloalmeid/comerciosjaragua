@@ -86,41 +86,67 @@ menu > ul > li{
     padding: 5px;
     
 }
-#containeranuncios{
-    display: grid;
-    justify-content: center;
-}
+
 .manutencao{
   background-color: red;
   text-align: center;
   margin: 50px;
 }
 #containeranuncios{
-    width: 330px;
     display: grid;
     justify-content: center;
-    align-items: center;
     margin: auto;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: var(--cor1);
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to right, #ffc15e, #f99c07);
     padding: 10px;
     
 }
+
+
 .box1{
-    width: 165px;
     display: grid;
-    margin: auto;
+       
 }
+
 .box2{
-    text-align: center;
-    width: 165px;
-    display: grid;
-    margin: auto;
+   display: grid;
+   padding: 10px;
 }
 #icomentario{
-    width: 100px;  
-    height: 100px; 
+    width: 100%;
+    height: 190px;
+    
+
 }
+@media(max-width: 400px) {
+    #icomentario{
+        height: 190px;
+        width: 400px;
+    }
+}
+@media(max-width: 200px) {
+    #icomentario{
+        height: 190px;
+        width: 200px;
+    }
+}
+#ititulo, #inome, #itelefone, #iemail, #idate,#icomentario{
+    border-radius: 5px;
+}
+#enviar{
+    background-color: var(--cor0);
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+   
+}
+#enviar:hover{
+    background-color: var(--cor4);
+}
+
+
+
+
 
 footer{
     width: 100%;
