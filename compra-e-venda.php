@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-styles/compraevendaanuncios.css
+
 
 <!DOCTYPE html>
 <html lang="pr-br">
@@ -114,7 +114,7 @@ styles/compraevendaanuncios.css
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comércios</title>
     <link rel="shortcut icon" href="../imagen/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/compraevendaanuncios.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WEYMSX0CE"></script>
