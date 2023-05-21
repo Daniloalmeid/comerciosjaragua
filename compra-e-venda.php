@@ -160,7 +160,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <main>
         <section id="Anunciantes">
             <form action="compra-e-venda.php" method="post" id="containeranuncios" enctype="multipart/form-data">
-                    <div class="box1">
+            <div class="box1">
                         <label for="ititulo">Titulo do Anúncio</label>
                         <input type="text" name="titulo" id="ititulo">
                         <label for="inome">Nome do Vendedor</label>
@@ -173,13 +173,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <input type="date" name="datas" id="idate">
                     </div>
                     
-                    <div class="box2>
+                    <div class="box2">
                         <label for="icomentario">Descrição do Produto</label>
                         <input type="text" name="comentario" id="icomentario">
                         <label for="iimagen">Fotos</label>
                         <input type="file" name="imagen" id="iimagen">
-                        <label for="ianunciar">Anunciar</label>
-                        <input type="submit" value="Enviar">
+                        <label for="ianunciar">Anúnciar</label>
+                        <input type="submit" value="Enviar" id="enviar">
                     </div>
                    
                 </form>
@@ -198,7 +198,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $datas = $row['datas'];
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
-                    
+                                
                             echo "<div>";
                             echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";

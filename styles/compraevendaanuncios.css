@@ -148,13 +148,13 @@ menu > ul > li{
     height: 400px;
     display: grid;
     margin: auto;
-    
-    background-color: #9a031e;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #h3anunciantes{
     position: relative;
-    top: 251px;
+    top: 174px;
     left: 0px;
     text-align: center;
     padding: 10px;
@@ -162,7 +162,7 @@ menu > ul > li{
 #dadosanunciantes{
     position: relative;
     padding: 10px;
-    top: -30%;
+    top: 122%;
     left: 0px;
 }
 #imganunciantes{
@@ -175,6 +175,11 @@ menu > ul > li{
     left: 0px;
     width: 260px;
     height: 175px ;
+}
+#comentarioanunciantes{
+    position: relative;
+    top: 115px;
+    left: 10px;
 }
 
 
