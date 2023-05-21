@@ -114,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comércios</title>
     <link rel="shortcut icon" href="../imagen/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/compraevendaanuncios.css">
+    <link rel="stylesheet" href="styles/vendas.css">
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WEYMSX0CE"></script>
@@ -199,7 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
 
-                            echo "<section";
+                            echo "<section id'containeranunciantes'>";
                             echo "<div>";
                             echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
