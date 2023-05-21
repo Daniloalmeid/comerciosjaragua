@@ -199,7 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
 
-                            echo "<section style=" border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;>";
+                            echo "<section>";
                             echo "<div>";
                             echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
