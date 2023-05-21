@@ -199,12 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section class='    width: 290px;
-                            height: 400px;
-                            display: grid;
-                            margin: auto;
-                            background-color: white;
-                            border-radius: 10px;'>";
+                            echo "<section class='width: 290px; height: 400px; display: grid;margin: auto; background-color: white; border-radius: 10px;'>";
                             echo "<div>";
                             echo "<h3 class='h3anunciantes'>$titulo</h3>";
                            // echo "<h3>$titulo</h3>";
