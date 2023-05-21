@@ -201,7 +201,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             
                             echo "<section class='width: 290px; height: 400px; display: grid;margin: auto; background-color: white; border-radius: 10px;'>";
                             echo "<div>";
-                            echo "<h3 class='h3anunciantes'>$titulo</h3>";
+                            echo "<h3 style='color: blue; font-size: 18px;'>$titulo</h3>";
                            // echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
                             echo "<p>Telefone: $telefone</p>";
