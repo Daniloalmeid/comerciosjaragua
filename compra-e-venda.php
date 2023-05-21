@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         <h1 class="h1comercios"> Compra e venda </h1>
         <main>
-        <section id="anunciantes">
+        <section id="Anunciantes">
             <form action="compra-e-venda.php" method="post" id="containeranuncios" enctype="multipart/form-data">
             <div class="box1">
                         <label for="ititulo">Titulo do Anúncio</label>
