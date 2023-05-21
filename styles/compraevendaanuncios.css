@@ -92,7 +92,7 @@ menu > ul > li{
   text-align: center;
   margin: 50px;
 }
-#containeranuncios{
+.containeranuncios{
     display: grid;
     justify-content: center;
     margin: auto;
