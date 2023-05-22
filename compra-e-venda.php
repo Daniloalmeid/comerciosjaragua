@@ -199,9 +199,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section class='containeranuncio'>";
+                            echo "<section style=' display: flex;
+                            flex-wrap: wrap;'>";
 
-                            echo "<div class='boxanunciantes'>";
+                            echo "<div style='  width: 290px;
+                            height: 550px;
+                            margin: auto;
+                            background-color: white;
+                            padding: 20px;
+                            margin-bottom: 10px;
+                            border-radius: 20px;'>";
 
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' class='imganunciantes'>";
                             
