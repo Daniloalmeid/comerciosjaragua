@@ -201,11 +201,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             
                             echo "<section>";
 
-                            echo "<div style='width: 290px;
-                            height: 500px;
-                            display: flex;
-                            flex-wrap: wrap; 
-                            margin: auto;
+                            echo "<div style='display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
                             background-color: white;
                             border-radius: 10px;'>";
 
