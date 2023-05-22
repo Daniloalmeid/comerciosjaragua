@@ -212,22 +212,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //width: 290px;
                             //height: 550px;
 
-                            echo "<div style='width: 290px; height: 550px;
+                            echo "<div style='  width: 300px;
+                            height: 550px;
                             margin: auto;
-                            text-align: center;
                             background-color: white;
                             padding: 20px;
                             margin-bottom: 10px;
                             border-radius: 20px;
                             border: 3px solid #29335c;
-                            box-shadow: 2px 2px 10px #ffc15e; margin-top: 10px;'>";
+                            box-shadow: 2px 2px 10px #ffc15e;
+                            margin-top: 10px;
+                            justify-content: center;'>";
 
-                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 100%; height: 230px; object-fit: cover;'>";
+                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style=' width: 290px;
+                            height: 230px;'>";
 
                             //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='     width: 290px;
                             //height: 230px;'>";
                             
-                            echo "<h3 style='   text-align: center;
+                            echo "<h3 style='text-align:center;
                             padding: 10px;' >$titulo</h3>";
                            // echo "<h3>$titulo</h3>";
 
