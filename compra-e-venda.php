@@ -212,8 +212,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             border: 3px solid #29335c;
                             box-shadow: 2px 2px 10px #ffc15e; margin-top: 10px;'>";
 
-                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='     width: 290px;
-                            height: 230px;'>";
+                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 100%; height: 230px; object-fit: cover;'>";
+
+                            //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='     width: 290px;
+                            //height: 230px;'>";
                             
                             echo "<h3 style='   text-align: center;
                             padding: 10px;' >$titulo</h3>";
