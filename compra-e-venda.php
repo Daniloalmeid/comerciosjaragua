@@ -258,7 +258,66 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 ?>
             </section>
-            <section></section>
+            <footer>
+            <div class="footer_contact">
+                <div>
+                    
+                    <h1 class="h1footer">Comércios Jaragua </h1>
+                    <div class="footer_social_media">
+                        <a href="https://www.facebook.com/comerciosjaragua/" target="_blank"><img src="imagen/redessociais/logo-facebook.jpg" class="redes2" alt=""></a>
+                        <a href="https://www.instagram.com/comercios_jaragua/" target="_blank"><img src="imagen/redessociais/logo-instagram.jpg" class="redes2" alt=""></a>
+                        <a href="https://twitter.com/comerciojaragua" target="_blank"><img src="imagen/redessociais/logo-twitter.jpg" class="redes2" alt=""></a>
+                        <a href="https://www.youtube.com/@Comerciosjaragua" target="_blank"><img src="imagen/redessociais/logo-youtube.jpg" class="redes2" alt=""></a>
+                        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511953658427" target="_blank"><img src="imagen/redessociais/watz.png" class="redes2" alt="whatapp"></a>
+                </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Site</h3>
+                    </li>
+                   
+                    <li>
+                        <a href="comercio.html" class="footer-link">Comércios</a>
+                    </li>
+                    <li>
+                        <a href="emprego.html" class="footer-link">Empregos</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html" class="footer-link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="anuncie.html" class="footer-link">Anúncie</a>
+                    </li>
+                    <li>
+                        <a href="compra-e-venda.html" class="footer-link">Compra e venda</a>
+                    </li>
+                    <li>
+                        <a href="bairro-jaragua.html" class="footer-link">Bairro Jaraguá</a>
+                    </li>
+                    <li>
+                        <a href="pico-do-jaragua.html" class="footer-link">Pico do Jaragua</a>
+                    </li>
+                    <li>
+                        <a href="pico-do-jaragua.html" class="footer-link">Parque do Jaraguá</a>
+                    </li>
+                
+                </ul>
+                <!-- <div id="input_group">
+                    <p>Entre com seu email para Receber novidades do bairro e comercios do Jaraguá</p>
+                    <input type="email" id="email">
+                    <button>
+                        <img src="imagen/redessociais/envelope.png" alt="">
+                    </button>
+                </div>-->
+    
+            </div>
+            <div id="footer_copyright">
+                &#169 
+                Todos os direitos reservado ao Comerciosjaraguá
+            </div>
+    
+        <footer>
+            
             
 
             
