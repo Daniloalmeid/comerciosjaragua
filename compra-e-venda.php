@@ -203,7 +203,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             echo "<div>";
 
-                            echo "<h3 style='color: blue; font-size: 18px;'>$titulo</h3>";
+                            echo "<h3 class='h3anunciantes'>$titulo</h3>";
                            // echo "<h3>$titulo</h3>";
                             echo "<p>$nome</p>";
                             echo "<p>Telefone: $telefone</p>";
