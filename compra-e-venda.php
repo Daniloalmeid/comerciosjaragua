@@ -184,7 +184,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                    
                 </form>
         </section>
-            <section>
+            <section style="display: flex;
+                            flex-wrap: wrap; justify-content: center;">
                 <?php 
                     $sql = "SELECT * FROM anuncios";
                     $resultado = mysqli_query($conexao, $sql);
