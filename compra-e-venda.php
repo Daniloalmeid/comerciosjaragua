@@ -204,10 +204,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<div style='width: 290px;
                             height: 400px;
                             display: flex;
-                            flex-wrap: wrap;
+                            flex-wrap: wrap; text-align: center;
                             margin: 50px;
                             background-color: white;
                             border-radius: 10px;'>";
+                            
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
 
                             echo "<h3 style='color: blue; font-size: 18px;'>$titulo</h3>";
