@@ -181,25 +181,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="ianunciar">Anúnciar</label>
                         <input type="submit" value="Enviar" id="enviar">
                     </div>
-                   
-                </form>
-                 <section class="containeranunciantes">
-                    <div>
-                        <h3 id="h3anunciantes">titulo</h3>
-                    </div>
-                    <div id="dadosanunciantes">
-                        <p>nome:</p>
-                        <p>Telefone:</p>
-                        <p>E-mail:</p>
-                        <p>Data:</p>
-                    </div>
-                    <div id="comentarioanunciantes">
-                        <p>Comentário: $comentario</p>
-                    </div>
-                    <div id="imganunciantes">
-                        <img src='imagen/comidas.jpg' id="imganunciantes1" alt='Imagem do anúncio'>
-                                        </div>
-                    </section id="containeranunciantes">
+
+                    "<div>";
+                        echo "<h3>$titulo</h3>";
+                        echo "<p>$nome</p>";
+                        echo "<p>Telefone: $telefone</p>";
+                        echo "<p>E-mail: $email</p>";
+                        echo "<p>Data: $datas</p>";
+                        echo "<p>Comentário: $comentario</p>";
+                        echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
+                        echo "</div>";
+                
 
         </section>
             <section>

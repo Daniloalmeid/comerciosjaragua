@@ -143,7 +143,12 @@ menu > ul > li{
 #enviar:hover{
     background-color: var(--cor4);
 }
-.containeranunciantes{
+.boxanunciantes{
+    background-color: #9a031e;
+} 
+
+
+/*.containeranunciantes{
     width: 290px;
     height: 400px;
     display: flex;
