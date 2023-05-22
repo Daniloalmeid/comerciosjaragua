@@ -144,7 +144,7 @@ menu > ul > li{
     background-color: var(--cor4);
 }
 
-.containeranuncio{
+/*.containeranuncio{
     display: flex;
     flex-wrap: wrap;
        
