@@ -92,6 +92,19 @@ menu > ul > li{
   text-align: center;
   margin: 50px;
 }
+
+@media(max-width: 400px) {
+    .containeranuncios{
+        height: 190px;
+        width: 300px;
+    }
+}
+@media(max-width: 200px) {
+    .containeranuncios{
+        height: 190px;
+        width: 200px;
+    }
+}
 .containeranuncios{
     display: grid;
     justify-content: center;
