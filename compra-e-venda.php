@@ -199,22 +199,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section>";
+                            echo "<section class='containeranuncio'>";
 
                             echo "<div class='boxanunciantes'>";
 
-                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
+                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' class='imganunciantes'>";
                             
-                            echo "<h3 style='color: blue; font-size: 18px;'>$titulo</h3>";
+                            echo "<h3 class='h3anuncios'>$titulo</h3>";
                            // echo "<h3>$titulo</h3>";
 
-                            echo "<p class='testenome'>$nome</p>";
-                            echo "<p>Telefone: $telefone</p>";
-                            echo "<p>E-mail: $email</p>";
-                            echo "<p>Data: $datas</p>";
-                            echo "<p style='position: relative;
-                            top: 15px;
-                            left: 10px;'>Comentário: $comentario</p>";
+                            echo "<p class='panunciantes'>Nome:$nome</p>";
+                            echo "<p class='panunciantes'>Telefone: $telefone</p>";
+                            echo "<p class='panunciantes'>E-mail: $email</p>";
+                            echo "<p class='panunciantes'>Data: $datas</p>";
+                            echo "<p class='descricao'>Descrição do Anuncio: $comentario</p>";
                             //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
                             echo "</div>";
                             echo "</section>";

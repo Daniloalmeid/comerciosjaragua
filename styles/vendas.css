@@ -143,9 +143,46 @@ menu > ul > li{
 #enviar:hover{
     background-color: var(--cor4);
 }
-.boxanunciantes{
-    background-color: #9a031e;
-} 
+
+.containeranuncio{
+    display: flex;
+    flex-wrap: wrap;
+       
+   }
+   
+   .boxanunciantes{
+       width: 290px;
+       height: 550px;
+       margin: auto;
+       background-color: white;
+       padding: 20px;
+       margin-bottom: 10px;
+       border-radius: 20px;
+   }
+   .imganunciantes{
+       width: 290px;
+       height: 230px;
+   }
+   .h3anuncios{
+       text-align: center;
+       padding: 10px;
+   }
+   .panunciantes{
+       padding: 5px;
+   }
+
+   .descricao{
+       text-align: center;
+       background-color: rgb(248, 240, 240);
+       border-radius: 10px;
+       padding: 5px;
+       text-justify: auto;
+       word-wrap: break-word;
+      
+    
+ 
+       
+   }
 
 
 /*.containeranunciantes{
