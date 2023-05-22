@@ -199,9 +199,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section style=' display: flex;
-                            flex-wrap: wrap;
-                            justify-content: center;'>";
+                            echo "<section style='display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100vh;'>";
 
                             // display: flex;
                             //flex-wrap: wrap;
