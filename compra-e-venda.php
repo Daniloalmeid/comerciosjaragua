@@ -214,6 +214,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             echo "<div style='width: 290px; height: 550px;
                             display: inline-block;
+                            margin: auto;
                             background-color: white;
                             padding: 20px;
                             margin-bottom: 10px;
