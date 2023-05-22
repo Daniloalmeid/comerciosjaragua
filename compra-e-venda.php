@@ -210,7 +210,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             margin-bottom: 10px;
                             border-radius: 20px;'>";
 
-                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' class='imganunciantes'>";
+                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='     width: 290px;
+                            height: 230px;'>";
                             
                             echo "<h3 class='h3anuncios'>$titulo</h3>";
                            // echo "<h3>$titulo</h3>";
