@@ -200,7 +200,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $imagem = $row['imagen'];
                             
                             echo "<section style='display: inline-block;  
-                            margin: auto;'>";
+                            margin: auto; text-align: center;'>";
 
                             // display: flex;
                             //flex-wrap: wrap;
