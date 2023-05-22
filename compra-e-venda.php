@@ -205,7 +205,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             height: 400px;
                             display: flex;
                             flex-wrap: wrap;
-                            margin: auto;
+                            margin: 50px;
                             background-color: white;
                             border-radius: 10px;'>";
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
@@ -216,8 +216,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<p>Telefone: $telefone</p>";
                             echo "<p>E-mail: $email</p>";
                             echo "<p>Data: $datas</p>";
-                            echo "<p style='    position: relative;
-                            top: 115px;
+                            echo "<p style='position: relative;
+                            top: 15px;
                             left: 10px;'>Comentário: $comentario</p>";
                             //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
                             echo "</div>";
