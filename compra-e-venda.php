@@ -184,9 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                    
                 </form>
         </section>
-            <section style="display: flex;
-                            flex-wrap: wrap; justify-content: center;   margin: 10px;
-             padding: 10px; ">
+            <section class="containeranunciantes2">
                 <?php 
                     $sql = "SELECT * FROM anuncios";
                     $resultado = mysqli_query($conexao, $sql);
@@ -224,6 +222,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             border: 3px solid #29335c;
                             box-shadow: 2px 2px 10px #ffc15e;
                             margin-top: 10px;
+                            margin-right: 10px;
                             justify-content: center;'>";
 
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style=' width: 290px;
