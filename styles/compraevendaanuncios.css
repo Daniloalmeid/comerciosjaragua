@@ -92,6 +92,8 @@ menu > ul > li{
   text-align: center;
   margin: 50px;
 }
+
+
 .containeranuncios{
     display: grid;
     justify-content: center;
@@ -143,7 +145,7 @@ menu > ul > li{
 #enviar:hover{
     background-color: var(--cor4);
 }
-#containeranunciantes{
+/*#containeranunciantes{
     width: 290px;
     height: 400px;
     display: grid;

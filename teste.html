@@ -182,18 +182,173 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <input type="submit" value="Enviar" id="enviar">
                     </div>
 
-                    "<div>";
-                        echo "<h3>$titulo</h3>";
-                        echo "<p>$nome</p>";
-                        echo "<p>Telefone: $telefone</p>";
-                        echo "<p>E-mail: $email</p>";
-                        echo "<p>Data: $datas</p>";
-                        echo "<p>Comentário: $comentario</p>";
-                        echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio'>";
-                        echo "</div>";
                 
 
         </section>
+        <style>
+            .containeranuncio{
+             display: flex;
+             flex-wrap: wrap;
+                
+            }
+            
+            .boxanunciantes{
+                width: 290px;
+                height: 500px;
+                margin: auto;
+                background-color: white;
+                padding: 20px;
+                margin-bottom: 10px;
+                border-radius: 20px;
+            }
+            .imganunciantes{
+                width: 290px;
+                height: 230px;
+            }
+            .h3anuncios{
+                text-align: center;
+                padding: 10px;
+            }
+            .panunciantes{
+                padding: 5px;
+            }
+
+            .descricao{
+                width: 290px;
+                height: 120px;
+                text-align: center;
+                background-color: red;
+                border-radius: 10px;
+            }
+ 
+
+            
+
+        </style>
+        <section class="containeranuncio">
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio' class="imganunciantes">
+                
+                <h3 class="h3anuncios">titulo</h3>
+                <p class="panunciantes">nome</p>
+                <p class="panunciantes">Telefone</p>
+                <p class="panunciantes">E-mail</p>
+                <p class="panunciantes">Data</p>
+                <p class="descricao">Descrição do Anúncio</p>
+            </div>
+
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+    
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+            </div>
+
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+    
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+            </div>
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+    
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+            </div>
+
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+    
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+            </div>
+
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+    
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+            </div>
+
+            
+               
+        
+        
+            <!--<div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+                </div>
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+               
+        
+        
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+                </div>
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+               
+        
+        
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+                </div>
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+               
+        
+        
+            <div class="boxanunciantes">
+                <img src="imagen/anuncie.jpg" alt='Imagem do anúncio'>
+                </div>
+                <h3>titulo</h3>
+                <p>nome</p>
+                <p>Telefone</p>
+                <p>E-mail</p>
+                <p>Data</p>
+                <p>Comentário</p>
+               
+        </section>
+            <style>
+             
+            </style>
+
+
+
+
             <section>
                 <!--<?php 
                     $sql = "SELECT * FROM anuncios";
@@ -235,6 +390,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         </main>
+         <h1 class="manutencao">Esta pagina esta em manutenção</h1>
     </body>
-    <h1 class="manutencao">Esta pagina esta em manutenção</h1>
+   
     
