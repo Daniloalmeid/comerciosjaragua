@@ -204,6 +204,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<div style='display: flex;
                             
                             flex-wrap: wrap;
+                            margin; 0 auto;
                             background-color: white;
                             border-radius: 10px;'>";
 
