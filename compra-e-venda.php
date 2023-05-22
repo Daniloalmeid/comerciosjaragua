@@ -220,10 +220,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             background-color: white;
                             padding: 20px;
                             margin-bottom: 10px;
+                            margin-top: 10px;
+                            margin-left: 10px;
+                            margin-right: 10px;
                             border-radius: 20px;
                             border: 3px solid #29335c;
                             box-shadow: 2px 2px 10px #ffc15e;
-                            margin-top: 10px;
+                            
                             justify-content: center;'>";
 
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style=' width: 290px;
