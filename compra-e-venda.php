@@ -213,7 +213,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             //height: 550px;
 
                             echo "<div style='width: 290px; height: 550px;
-                            display: inline-block;
+                            display: flex;
+                            flex-wrap: wrap;
                             margin: auto;
                             background-color: white;
                             padding: 20px;
