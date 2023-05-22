@@ -154,11 +154,14 @@ menu > ul > li{
 #ititulo, #inome, #itelefone, #iemail, #idate,#icomentario{
     border-radius: 5px;
 }
+#iimagen{
+    width: 109px;
+}
 #enviar{
     background-color: var(--cor0);
     color: white;
     border-radius: 5px;
-    width: 200px;
+    width: 150px;
    
 }
 #enviar:hover{
