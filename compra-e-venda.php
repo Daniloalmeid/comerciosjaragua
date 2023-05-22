@@ -209,8 +209,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             //display: inline-block;  
                             //margin: auto; text-align: center;
 
-                            echo "<div style='width: 290px;
-                            height: 550px;
+                            //margin-left: auto;
+  
+
+  //width: 290px;
+                            //height: 550px;
+
+                            echo "<div style='margin-right: auto;
+                            max-width: 90%;
+                            width: 100%;
                             margin: auto;
                             background-color: white;
                             padding: 20px;
