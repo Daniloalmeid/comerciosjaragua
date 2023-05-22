@@ -234,6 +234,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
                             echo "</div>";
                             echo "</section>";
+
+                            /*      */
+
+                            echo "<section style='display: flex;
+                            flex-wrap: wrap;'>";
+
+                            echo "<div style='width: 290px;
+                            height: 550px;
+                            margin: auto;
+                            background-color: white;
+                            padding: 20px;
+                            margin-bottom: 10px;
+                            border-radius: 20px;
+                            border: 3px solid #29335c;
+                            box-shadow: 2px 2px 10px #ffc15e; margin-top: 10px;'>";
+
+                            echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 100%; height: 230px; object-fit: cover;'>";
+
+                            //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='     width: 290px;
+                            //height: 230px;'>";
+                            
+                            echo "<h3 style='   text-align: center;
+                            padding: 10px;' >$titulo</h3>";
+                           // echo "<h3>$titulo</h3>";
+
+                            echo "<p style=' padding: 5px;'>Nome:$nome</p>";
+                            echo "<p style=' padding: 5px;'>Telefone: $telefone</p>";
+                            echo "<p style=' padding: 5px;'>E-mail: $email</p>";
+                            echo "<p style=' padding: 5px;'>Data: $datas</p>";
+                            echo "<p style='      text-align: center;
+                            background-color: rgb(248, 240, 240);
+                            border-radius: 10px;
+                            padding: 5px;
+                            text-justify: auto;
+                            word-wrap: break-word;'>Descrição do Anuncio: $comentario</p>";
+                            //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
+                            echo "</div>";
+                            echo "</section>";
                             
                         }
                     } else {
