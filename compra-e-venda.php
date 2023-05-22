@@ -199,8 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section style='  display: flex;
-                            flex-wrap: wrap;'>";
+                            echo "<section style='  display: inline-block;'>";
 
                           
                             //display: inline-block;  
@@ -213,9 +212,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             //height: 550px;
 
                             echo "<div style='width: 290px; height: 550px;
-                            position: relative;
-                            justify-content: center;
-                            align-items: center;
                             margin: auto;
                             background-color: white;
                             padding: 20px;
