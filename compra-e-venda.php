@@ -201,12 +201,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             
                             echo "<section>";
 
-                            echo "<div'    width: 290px;
+                            echo "<div'width: 290px;
                             height: 400px;
                             display: flex;
                             flex-wrap: wrap;
                             margin: auto;
-                            background-color: white;
+                            background-color: red;
                             border-radius: 10px;'>";
 
                             echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
