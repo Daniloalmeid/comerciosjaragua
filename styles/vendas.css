@@ -178,12 +178,15 @@ menu > ul > li{
     width: 260px;
     height: 175px ;
 }
-#comentarioanunciantes{
+.comentarioanunciantes{
     position: relative;
     top: 115px;
     left: 10px;
     
 
+}
+.testenome{
+    color: #9a031e;
 }
 
 
