@@ -199,11 +199,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $comentario = $row['comentario'];
                             $imagem = $row['imagen'];
                             
-                            echo "<section style='display: inline-block;  
-                            margin: auto; text-align: center;'>";
+                            echo "<section style='display: flex;
+                            flex-wrap: wrap;'>";
 
                             // display: flex;
                             //flex-wrap: wrap;
+                            //display: inline-block;  
+                            //margin: auto; text-align: center;
 
                             echo "<div style='width: 290px;
                             height: 550px;
