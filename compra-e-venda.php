@@ -43,7 +43,35 @@ if ($imagen['size'] > $maxFileSize) {
     if ($imagen['error'] === UPLOAD_ERR_OK) {
     $nomeArquivo = $imagen['name'];
     $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
+        //
+        // Lidando com o upload de imagens
+$imagen = $_FILES['imagen'];
 
+// Verificando o formato da imagem
+$allowedFormats = array('jpg', 'jpeg');
+$extension = strtolower(pathinfo($imagen['name'], PATHINFO_EXTENSION));
+
+if (!in_array($extension, $allowedFormats)) {
+    echo "Formato de imagem inválido. Por favor, envie uma imagem JPG.";
+    exit;
+}
+
+// Verificando o tamanho da imagem
+$maxFileSize = 4 * 1024 * 1024; // 4MB
+
+if ($imagen['size'] > $maxFileSize) {
+    echo "Tamanho de arquivo excedido. Por favor, envie uma imagem de até 4MB.";
+    exit;
+}
+
+if ($imagen['error'] === UPLOAD_ERR_OK) {
+    $nomeArquivo = $imagen['name'];
+    $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
+
+    // Restante do seu código...
+
+
+        //
     if (move_uploaded_file($imagen['tmp_name'], $caminhoArquivo)) {
         // Arquivo movido com sucesso, continue com a inserção no banco de dados
         $sql = "INSERT INTO anuncios ( titulo, nome, telefone, email, datas, comentario, imagen) VALUES ( '$titulo','$nome', '$telefone', '$email', '$datas', '$comentario', '$nomeArquivo')";
