@@ -133,11 +133,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <header>
             <section class="redessociais">
                 <h1 class="h1redessociais">Redes Socias</h1>
-                <a href="https://www.facebook.com/comerciosjaragua/" target="_blank"><img src="imagen/redessociais/logo-facebook.jpg" class="redes1" alt="Facebook, Comercios jaraguá"></a>
-                <a href="https://www.instagram.com/comercios_jaragua/" target="_blank"><img src="imagen/redessociais/logo-instagram.jpg" class="redes1" alt="Instagran,comercios jaraguá"></a>
-                <a href="https://twitter.com/comerciojaragua" target="_blank"><img src="imagen/redessociais/logo-twitter.jpg" class="redes1" alt="twitter, comercios jaraguá"></a>
-                <a href="https://www.youtube.com/@Comerciosjaragua" target="_blank"><img src="imagen/redessociais/logo-youtube.jpg" class="redes1" alt="youtube, comercios jaraguá sp"></a>
-                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511953658427" target="_blank"><img src="imagen/redessociais/watz.png" class="redes1" alt="whatapp, comercios jaraguá sp"></a>
+                <a href="https://www.facebook.com/comerciosjaragua/" target="_blank"><img src="imagen/redessociais/logo-facebook.jpg" class="redes1" alt="Facebook, Comercios jaraguá,anuncios jaragua,compra e venda, "></a>
+                <a href="https://www.instagram.com/comercios_jaragua/" target="_blank"><img src="imagen/redessociais/logo-instagram.jpg" class="redes1" alt="Instagran,comercios jaraguá, instagran jaraguá,instagram.com/comercios_jaragua/"></a>
+                <a href="https://twitter.com/comerciojaragua" target="_blank"><img src="imagen/redessociais/logo-twitter.jpg" class="redes1" alt="twitter, comercios jaraguá, anuncios jaragua,compra e venda, twiter jaragá"></a>
+                <a href="https://www.youtube.com/@Comerciosjaragua" target="_blank"><img src="imagen/redessociais/logo-youtube.jpg" class="redes1" alt="youtube, comercios jaraguá sp, anuncios jaragua,compra e venda, videos jaraguá"></a>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511953658427" target="_blank"><img src="imagen/redessociais/watz.png" class="redes1" alt="whatsapp, comercios jaraguá sp, anuncios jaragua,compra e venda"></a>
     
             </section>
             <div class="logo">
@@ -165,22 +165,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="compra-e-venda.php" method="post" class="containeranuncios" enctype="multipart/form-data">
                     <div class="box1">
                         <label for="ititulo">Titulo do Anúncio</label>
-                        <input type="text" name="titulo" id="ititulo">
+                        <input type="text" name="titulo" id="ititulo" required>
                         <label for="inome">Nome do Vendedor</label>
-                        <input type="text" name="nome" id="inome">
+                        <input type="text" name="nome" id="inome" required>
                         <label for="itelefone">Telefone</label>
-                        <input type="tel" name="telefone" id="itelefone">
+                        <input type="tel" name="telefone" id="itelefone" required>
                         <label for="iemail">E-mail</label>
-                        <input type="email" name="email" id="iemail">
+                        <input type="email" name="email" id="iemail" required>
                         <label for="idate">Data</label>
-                        <input type="date" name="datas" id="idate">
+                        <input type="date" name="datas" id="idate" required>
                     </div>
                     
                     <div class="box2">
                         <label for="icomentario">Descrição do Produto</label>
-                        <input type="text" name="comentario" id="icomentario">
+                        <input type="text" name="comentario" id="icomentario" required>
                         <label for="iimagen">Fotos</label>
-                        <input type="file" name="imagen" id="iimagen">
+                        <input type="file" name="imagen" id="iimagen" required>
                         <label for="ianunciar">Anúnciar</label>
                         <input type="submit" value="Enviar" id="enviar">
                     </div>
