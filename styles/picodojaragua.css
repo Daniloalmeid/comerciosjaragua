@@ -1,5 +1,10 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family= Patua +One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;1,200&family=Newsreader:wght@200&family=Sofia&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -14,6 +19,8 @@
 --cor5: #4f6d7a;
 --fonte-padrao: arial, verdana, helvetica, sans-serif;
 --fonte-destaque: "patua one", cursive;
+--fonte-redes: 'Sofia', cursive;
+--fonte-texto: 'Crimson Pro', serif;
 }
 body{
     background-color: rgb(219, 216, 216);
@@ -31,6 +38,7 @@ section.redessociais{
     color: white;
     text-shadow: 5px 5px 10px black;
     text-align: left ;
+    font-family: var(--fonte-redes);
     
 }
 img.redes1{
@@ -39,7 +47,7 @@ img.redes1{
     margin: 5px;
     border-radius: 50%;
     left: 0%;
-    top: 0px;
+    top: -10px;
 }
 
 img.redes1:hover{
@@ -103,9 +111,10 @@ menu > ul > li{
     padding: 10px;
     margin: 5px;
     text-align: left;
+    font-family: var(--fonte-texto);
 }
 .textjaragua{
-    width: 70%;
+    width: 80%;
     text-align: center;
     margin: auto;
     background-color: white;
