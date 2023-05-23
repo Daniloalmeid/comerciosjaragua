@@ -15,27 +15,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Lidando com o upload de imagens
     $imagen = $_FILES['imagen'];
     // codigo tamanho
-    // Lidando com o upload de imagens
-$imagen = $_FILES['imagen'];
+    $
+    $allowedFormats = array('jpg', 'jpeg');
 
-// Verificando o formato da imagem
-$allowedFormats = array('jpg', 'jpeg');
-$extension = strtolower(pathinfo($imagen['name'], PATHINFO_EXTENSION));
+    $
+    $extension = strtolower(pathinfo($imagen['name'], PATHINFO_EXTENSION));
 
-if (!in_array($extension, $allowedFormats)) {
+    if (!in_array($extension, $allowedFormats)) {
+        
+    
     echo "Formato de imagem inválido. Por favor, envie uma imagem JPG.";
     exit;
 }
-
-// Verificando o tamanho da imagem
-$maxFileSize = 4 * 1024 * 1024; // 4MB
-
-if ($imagen['size'] > $maxFileSize) {
-    echo "Tamanho de arquivo excedido. Por favor, envie uma imagem de até 4MB.";
-    exit;
-}
-
-    
 
 
 
