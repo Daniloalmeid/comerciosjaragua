@@ -14,7 +14,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Lidando com o upload de imagens
     $imagen = $_FILES['imagen'];
+    // codigo tamanho
+    $
+    $allowedFormats = array('jpg', 'jpeg');
 
+    $
+    $extension = strtolower(pathinfo($imagen['name'], PATHINFO_EXTENSION));
+
+    if (!in_array($extension, $allowedFormats)) {
+        
+    
+    echo "Formato de imagem inválido. Por favor, envie uma imagem JPG.";
+    exit;
+}
+
+
+
+    //fiinal
     if ($imagen['error'] === UPLOAD_ERR_OK) {
     $nomeArquivo = $imagen['name'];
     $caminhoArquivo = 'compraevenda/' . $nomeArquivo;
