@@ -1,5 +1,10 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family= Patua +One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;1,200&family=Newsreader:wght@200&family=Sofia&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -14,6 +19,8 @@
     --cor5: #4f6d7a;
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: "patua one", cursive;
+    --fonte-redes: 'Sofia', cursive;
+    --fonte-texto: 'Crimson Pro', serif;
 }
 body{
     background-color: rgb(219, 216, 216);
@@ -31,6 +38,7 @@ section.redessociais{
     color: white;
     text-shadow: 5px 5px 10px black;
     text-align: left ;
+    font-family: var(--fonte-redes);
     
 }
 img.redes1{
@@ -112,9 +120,10 @@ menu > ul > li{
         text-align: center;
         text-align: justify; 
         text-indent: 0px;
+        text-justify: auto;
         margin-bottom: 20px; 
         padding: 2px;
-        font-family: var(--fonte-padrao);
+        font-family: var(--fonte-texto);
         
 }
 .bairros{
