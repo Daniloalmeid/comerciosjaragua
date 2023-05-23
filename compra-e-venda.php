@@ -173,7 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="iemail">E-mail</label>
                         <input type="email" name="email" id="iemail" required>
                         <label for="idate">Data</label>
-                        <input type="date" name="datas" id="idate" required>
+                        <input type="date" name="datas" id="idate" required><br>
                     </div>
                     
                     <div class="box2">
@@ -251,7 +251,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             border-radius: 10px;
                             padding: 5px;
                             text-justify: auto;
-                            word-wrap: break-word;'>Descrição do Anuncio: $comentario</p>";
+                            word-wrap: break-word; font-family: var(--fonte-texto);'>Descrição do Anuncio: $comentario</p>";
                             //echo "<img src='compraevenda/$imagem' alt='Imagem do anúncio' style='width: 260px; height: 175px;'>";
                             echo "</div>";
                             echo "</section>";

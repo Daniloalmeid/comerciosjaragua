@@ -259,7 +259,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             echo "<p style=' padding: 5px;'>Telefone: $telefone</p>";
                             echo "<p style=' padding: 5px;'>E-mail: $email</p>";
                             echo "<p style=' padding: 5px;'>Data: $datas</p>";
-                            echo "<p style='      text-align: center;
+                            echo "<p style='text-align: center;
                             background-color: rgb(248, 240, 240);
                             border-radius: 10px;
                             padding: 5px;
