@@ -44,6 +44,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Erro no upload da imagem: " . $imagen['error'];
 }
+
+    // novo codigo tamanho imagen
+    <?php
+// ... Código existente ...
+
+// Verificando o tamanho da imagem
+$maxFileSize = 4 * 1024 * 1024; // 4MB
+
+if ($_FILES['imagen']['size'] > $maxFileSize) {
+    echo "Tamanho de arquivo excedido. Por favor, envie uma imagem de até 4MB.";
+    exit;
+}
+
+// Verificando o formato da imagem
+$allowedFormats = array('jpg', 'jpeg');
+$extension = strtolower(pathinfo($_FILES['imagen']['name'], PATHINFO_EXTENSION));
+
+if (!in_array($extension, $allowedFormats)) {
+    echo "Formato de imagem inválido. Por favor, envie uma imagem JPG.";
+    exit;
+}
+
+// Processar o arquivo enviado ($_FILES['imagen']) abaixo desta linha
+// ...
+
+
+    //
 }
 
 
