@@ -110,11 +110,12 @@ menu > ul > li{
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .column {
-    width: 30%;
+    width: calc(33.33% - 20px);
     margin: 0 10px;
 }
 
@@ -126,17 +127,31 @@ menu > ul > li{
     border: 1px solid #ddd;
 }
 
-.noticias {
-    width: 100%;
-}
-
 .boxcomercio {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.insta {
-    width: 100%;
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .boxcomercio {
+        order: 1;
+    }
+
+    .insta {
+        order: 2;
+    }
+
+    .noticias {
+        order: 3;
+    }
 }
 
 
