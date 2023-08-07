@@ -223,34 +223,26 @@ p {
 
 
 
-.bemvindo{
-    width: 90%;
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    text-justify: auto;
-    box-shadow: 3px 3px 5px var(--cor0);
-    text-align: center;
-}
-p.bemvindop{
-    width: 90%;
-    text-align: center;
-    text-align: justify; 
-    margin-bottom: 20px; 
-    padding: 2px;
-    font-family: var(--fonte-texto);
-    
-    
-}
+
 
 
 .boxcomercio{
-text-align: center;
-padding: 10px;
+text-justify: auto;
+padding: 20px;
+background-color: white;
 
+}
+
+.boxcomercio p{
+    text-justify: auto;
+    padding: 10px;
+    background-color: white;
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
+    
+    }
+.texto{
+    padding: 5px;
 }
 .comercios{
     margin-top: 60px;
