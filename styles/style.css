@@ -105,6 +105,49 @@ menu > ul > li{
     font-family: var(--fonte-padrao);
     
 }
+
+/* Colunas*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias,
+.boxcomercio,
+.insta {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.boxcomercio {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+/* fim colunas */
+
+
 .bemvindo{
     width: 90%;
     background-color: white;
@@ -126,6 +169,17 @@ p.bemvindop{
     font-family: var(--fonte-texto);
     
     
+}
+
+.noticias{
+    background-color: white;
+    display: inline-block;
+    
+    padding: 10px;
+}
+
+.noticias > h2,p{
+   padding: 5px;
 }
 .boxcomercio{
 text-align: center;
@@ -527,6 +581,17 @@ section.vagasdeemprego{
     position: relative;
     text-decoration: none;
     top: -10px;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.imgpost{
+    width: 300px;
 }
 footer{
     width: 100%;
