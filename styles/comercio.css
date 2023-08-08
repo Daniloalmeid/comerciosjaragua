@@ -212,6 +212,11 @@ p {
     width: 300px;
 }
 
+.h2noticias{
+    text-align: center;
+    padding: 10px;
+}
+
 
 
 main > article.boxcomercios{

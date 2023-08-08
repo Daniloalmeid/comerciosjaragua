@@ -220,6 +220,22 @@ p {
     color: white;
 }
 
+.h2noticias{
+    text-align: center;
+    padding: 10px;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.imgpost{
+    width: 300px;
+}
+
 
 
 
@@ -649,16 +665,8 @@ section.vagasdeemprego{
     top: -10px;
 }
 
-.post{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 
-.imgpost{
-    width: 300px;
-}
+
 footer{
     width: 100%;
     box-sizing: border-box;
