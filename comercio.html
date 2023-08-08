@@ -20,6 +20,8 @@
 
   gtag('config', 'G-3WEYMSX0CE');
 </script>
+
+<script type="text/javascript" src="/js/instafeed.min.js"></script>
 <body>
     <header>
         <section class="redessociais">
@@ -49,8 +51,30 @@
             </ul>
         </menu>
     </header>
-    <main>
-        <h1 class="h1comercios"> Comércios</h1>
+    <h1 class="h1comercios"> Comércios</h1>
+
+    <main class="container">
+
+        
+        <div class="column column-left">
+            <article class="noticias">
+                <a href="noticias/posto_de_atendimento.html"><img src="imagen/noticias/atendimento.jpeg" alt="Cohab jaragua, taipas,pirituba"></a>
+              <h2>Posto de Atendimento COHAB</h2><br>
+              <p>A Subprefeitura de Pirituba/Jaraguá agora possui um Posto de Atendimento da COHAB</p>
+              
+            </article>
+    
+            <article class="noticias">
+                <a href="noticias/Servico_de_recape.html"><img src="imagen/noticias/recapamento.jpg" alt=""></a>
+              <h2>Serviço de recape já ultrapassou a marca de 8,6 milhões de metros quadrados na Capital</h2><br>
+              <p>A Prefeitura de São Paulo, por meio Secretaria Municipal das Subprefeituras, informa que no momento, são 75 os trechos em andamento</p>
+              
+            </article>
+    
+            
+          </div>
+
+        
         <article class="boxcomercios">
             <div class="boxalimentos">
                 <a href="alimentos-e-bebidas.html"><img src="../imagen/comidas.jpg" class="logoalimentos" alt="comidas e bebidas"></a>
@@ -77,6 +101,25 @@
                 <h1 class="h1lojas">Lojas </h1>
             </div>
         </article>
+
+       
+
+        <div class="column column-right">
+            <div class="insta">
+              <H2 class="h2insta">#Instragram</H2>
+              <p class="pinsta">Siga nosso Instagram para ficar por dentro das novidades !</p>
+            </div>
+            <div id="instafeed"></div>
+          </div>
+
+          <script type="text/javascript">
+            var feed = new Instafeed({
+              accessToken: 'IGQVJXWHhZAY3YyNl9FdnlxSjNpakVpS2szVDJhdlozckg2R0xkZAWdjdDlvV29RTTZAmOUl4bUs1dmNLMTZAGY0RTNlBWNThhUG1YVmZAWSUp0dlVlVTdJRlBvaW9SUzk1Y1YtcGFZAT2gzZAkZAyUVZAQVVZAmSwZDZD',limit:7,
+              template:'<div class="post"><a href="{{link}}" target="_blank"><img class="imgpost" title="{{caption}}" src="{{image}}" /></a></div>'
+            });
+            feed.run();
+        </script>
+
     </main>
     <footer>
         <div class="footer_contact">
@@ -91,6 +134,8 @@
                     <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511953658427" target="_blank"><img src="imagen/redessociais/watz.png" class="redes2" alt="whatapp"></a>
             </div>
             </div>
+
+            
             <ul class="footer-list">
                 <li>
                     <h3>Site</h3>
