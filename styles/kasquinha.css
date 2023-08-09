@@ -229,7 +229,7 @@ p {
 /* fim colunas */
 
 .noticias{
-    border: 0.5px solid black;
+    
     display: inline-block;
     padding: 10px;
     margin-bottom: 30px;
@@ -246,6 +246,7 @@ p {
 .h2noticias{
     text-align: center;
     padding: 10px;
+    color:  #9a031e;
 }
 
 .post{
@@ -257,6 +258,7 @@ p {
 
 .imgpost{
     width: 300px;
+    border-radius: 20px;
 }
 
 .boxcomercio{
