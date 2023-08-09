@@ -14,6 +14,8 @@
 --cor5: #4f6d7a;
 --fonte-padrao: arial, verdana, helvetica, sans-serif;
 --fonte-destaque: "patua one", cursive;
+--fonte-redes: 'Sofia', cursive;
+--fonte-texto: 'Crimson Pro', serif;
 }
 body{
     background-color: rgb(219, 216, 216);
@@ -192,6 +194,10 @@ p {
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 20px;
+    background-color: white;
+}
+.noticias h2{
+   font-family: var(--fonte-texto);
 }
 
 .insta{
