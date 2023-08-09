@@ -220,6 +220,17 @@ p {
     color: white;
 }
 
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.imgpost{
+    width: 300px;
+}
+
 
 
 
