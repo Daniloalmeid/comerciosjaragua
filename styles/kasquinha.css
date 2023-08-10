@@ -328,6 +328,8 @@ p {
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+   
   }
 
   .imagem-container{
@@ -429,6 +431,39 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .container_endereco{
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+   
+  }
+
+  .pendereco{
+    
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    
+   
+  }
+
+  .imgwaze{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+   
+  }
+
+  .imgwaze:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.918);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  
 
  
 
