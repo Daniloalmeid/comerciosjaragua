@@ -118,7 +118,7 @@ menu > ul > li{
 /* Estilos para telas grandes (largura acima de 768px) */
 @media screen and (min-width: 769px) {
     .cabpadaria {
-      width: 60%;
+      width: 90%;
     }
   }
   
