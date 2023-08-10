@@ -259,6 +259,12 @@ p {
 .imgpost{
     width: 300px;
     border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(100, 98, 98);
+
+}
+
+.pdoce{
+    padding: 10px;
 }
 
 .boxcomercio{
@@ -304,6 +310,87 @@ p {
     }
   }
 
+  .imgpq{
+    box-shadow: 10px 10px 20px black;
+    margin-bottom: 12px;
+  }
+
+  .imggrande{
+    box-shadow: 10px 10px 20px black;
+    margin-bottom: 12px;
+  }
+
+  .h1pedido{
+    background-color: #9a031e;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .imagem-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+  .imgpedidos{
+    margin: 10px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .imgifood{
+   display: block;
+   margin: auto;
+   
+  }
+
+  .imgifoodfull{
+    display: block;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 769px) {
+    .imgifood {
+      display: none; /* Esconde a imagem pequena em telas grandes */
+    }
+    
+    .imgifoodfull {
+      display: block; /* Mostra a imagem grande em telas grandes */
+      max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+  }
+  
+  /* Estilos para telas pequenas (largura até 768px) */
+  @media screen and (max-width: 768px) {
+    .imgifood  {
+      display: block; /* Mostra a imagem pequena em telas pequenas */
+      max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .imgifoodfull {
+      display: none; /* Esconde a imagem grande em telas pequenas */
+    }
+  }
+  .pedidos{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .imgifoodfull:hover,
+  .imgifood:hover,
+  .imgpedidos:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.918);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
  
 
