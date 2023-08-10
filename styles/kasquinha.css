@@ -91,6 +91,7 @@ menu > ul > li{
     border-radius: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
+    box-shadow: 5px 5px 20px black;
 }
 .padariapao{
     color: #b22751;
@@ -391,6 +392,43 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.918);
   transition: box-shadow 0.3s ease-in-out;
 }
+
+.noticias {
+    margin: 20px;
+  }
+  
+  .imagem-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imgpost {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .informacoes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .imagem-hover:hover .imgpost {
+    transform: scale(1.1);
+  }
+  
+  .imagem-hover:hover .informacoes {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
  
 
