@@ -437,6 +437,7 @@ p {
     padding: 15px;
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
+    margin-bottom: 20px;
    
   }
 
@@ -462,6 +463,61 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.918);
     transition: box-shadow 0.3s ease-in-out;
   }
+
+  .maisvendidos{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.maisvendidos h1{
+    text-align: left;
+}
+
+.anunciosamazon{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.amazon{
+    width: 250px;
+    padding: 10px;
+    
+    
+    
+}
+.amazon img{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.152); 
+  cursor: pointer;
+  
+}
+
+.amazon h2,p{
+    color: black;
+    padding: 10px;
+}
+
+.aamazon{
+    text-decoration: none;
+}
+.preco{
+    border-radius: 10px;
+}
+
+.preco:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.6s; 
+}
+
+.h2amazon:hover,
+.amazon p:hover{
+    text-decoration: underline;
+}
 
   
 
