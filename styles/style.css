@@ -689,6 +689,12 @@ section.vagasdeemprego{
     padding: 10px;
     
     
+    
+}
+.amazon img{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.152); 
+  cursor: pointer;
+  
 }
 
 .amazon h2,p{
