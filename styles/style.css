@@ -665,6 +665,40 @@ section.vagasdeemprego{
     top: -10px;
 }
 
+.maisvendidos{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.maisvendidos h1{
+    text-align: left;
+}
+
+.anunciosamazon{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.amazon{
+    width: 250px;
+    padding: 10px;
+    
+    
+}
+
+.amazon h2,p{
+    
+    padding: 10px;
+}
+.preco{
+    border-radius: 10px;
+}
+
 
 
 footer{
@@ -723,6 +757,8 @@ img.redes2:hover{
     padding: 10px;
     background-color: black;
 }
+
+
 
 
 
