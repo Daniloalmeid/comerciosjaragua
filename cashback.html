@@ -9,7 +9,7 @@
     <meta name="keywords" content="comercios-jaragua, pirituba, produtos-amazon,pico-do-jaragua,padarias-jaragua,mercados-jaragua, parque-do-jaragua">
 
     <meta name="author" content="Danilo Almeida">
-    <title>Comécio Jaragua</title>
+    <title>CashBack Comécio Jaragua</title>
     <link rel="shortcut icon" href="imagen/favicon.ico" type="image/x-icon">
     <link rel="image_src" href="imagen/favicon.ico"/>
     <link rel="stylesheet" href="styles/style.css">
@@ -90,24 +90,61 @@
     </header>
 
         <main>
-            <section id="cadastro">
-                <h2>Cadastro de Cliente</h2>
-                <form action="processa_cadastro.php" method="POST">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required><br>
+            <div class="containercadastro">
+                <div class="form-image">
+                    <img src="imagen/cashback/cashback2.jpg" alt="CashBack">
+                </div>
+                <form action="Cadastro.php" method="post" class="form">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastro do Cliente</h1>
+                        </div>
+                        <div class="login-button">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="nome">Nome Completo</label>
+                            <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="cpf">CPF:</label>
+                            <input type="email" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                        </div>
+                    
+                        <div class="input-box">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="telefone">Telefone:</label>
+                            <input type="telefone" id="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+                        </div>
 
-                    <label for="email">CPF:</label>
-                    <input type="email" id="cpf" name="cpf" required><br>
-            
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required><br>
+                        <div class="input-box">
+                            <label for="senha">Senha:</label>
+                            <input type="senha" id="senha" name="senha" placeholder="Digite sua senha" required>
+                        </div>
 
-                    <label for="email">Telefone:</label>
-                    <input type="email" id="telefone" name="telefone" required><br>
-            
-                    <input type="submit" value="Cadastrar">
+                        <div class="input-box">
+                            <label for="senha">Confirme sua Senha:</label>
+                            <input type="senha" id="senha" name="confirmesenha" placeholder="Confirme sua Senha" required>
+                        </div>
+
+                    </div>
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Gênero</h6>
+                        </div>
+                    </div>
+
                 </form>
-            </section>
+            </div>
+
+
+           
             
             <!-- <section id="compras">
                 <h2>Registre Suas Compras</h2>
