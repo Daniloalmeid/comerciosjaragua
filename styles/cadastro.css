@@ -36,6 +36,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--cor1);
 }
 section.redessociais{
     background-color: var(--cor0);
@@ -151,661 +152,91 @@ img.redes1:hover{
 }
 
 /* menu fim */
-header > h1#comercio{
-    height: 60px;
-    padding: 10px;
-    background-color: var(--cor0);
-    color: white;
-    text-shadow: 6px 6px 10px black;
-    
+
+.containercadastro{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    background-color: var(--cor3);
+    box-shadow: 5px 5px 10px black;
 }
-menu#itens{
-    background-color: var(--cor1);
-    padding: 5px;
-    text-align: center;
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d0066;
+    padding: 1rem;
 }
-menu > ul > li > a.linkmenu{
-    color: black;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 3px;
-    
-    
-}
-menu >ul > li > a:hover{
-    background-color: var(--cor0);
-    color: white;
-    border-radius: 10px;
-    transition: color .2s;
-}
-menu > ul > li{
-    display: inline;
-    padding: 5px;
-    
-}
-.explore{
-    text-align: left;
-    padding: 5px;
-    color: var(--cor1);
-    text-shadow: .8px .8px .8px black;
-    font-family: var(--fonte-padrao);
-    
+.form-image img{
+    width: 31rem;
 }
 
-/* Colunas*/
-
-.container {
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.form-header{
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
-    margin: 5px;
-    width: 85%;
-    margin: 0 auto;
-
-}
-.imgnoticias{
-    transition: opacity 0.2s ease;
-}
-.imgnoticias:hover{
-    opacity: 0.7;
-    color: #080f0f00;
-    cursor: pointer;
 }
 
-.news-item h3:hover,
-.news-item p:hover {
-    color: #080f0f79;
-    cursor: pointer;
-}
-
-.item-noticias h1:hover,
-.item-noticias p:hover{
-    color: #080f0f79;
-    cursor: pointer;
-
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-}
-.column-left {
-    flex: 2;
-    margin: 5px;
-    background-color: rgba(250, 251, 249, 0.788);
-    
-}
-.column-center {
-    flex: 5;
-}
-.column-right {
-    flex: 2;
-    margin: 5px;
-    background-color: rgba(250, 251, 250, 0.788);
-    
-}
-    
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-h3 {
-    font-size: 18px;
-}
-p {
-    font-size: 14px;
-}
-
-/* Estilos para telas menores ou iguais a 768 pixels */
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column; /* Altera a direção para empilhar as colunas verticalmente */
-    }
-
-    /* Define a ordem das colunas em dispositivos de tela pequena */
-    .column-center {
-        order: 1; /* Central aparece primeiro */
-    }
-
-    .column-left {
-        order: 2; /* Esquerda aparece em segundo */
-    }
-
-    .column-right {
-        order: 3; /* Direita aparece em terceiro */
-    }
-}
-
-/* Estilos para telas menores ou iguais a 768 pixels */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        
-        
-    }
-    .column {
-        flex: 1;
-        margin-bottom: 20px;
-    }
-}
-
-
-/* fim colunas */
-
-.noticias{
-    border: 0.5px solid black;
-    display: inline-block;
-    padding: 10px;
-    margin-bottom: 30px;
-    border-radius: 20px;
-}
-
-.insta{
-    background-image: linear-gradient(to right, #405de6, #e1306c,#f77736  );
-    text-align: center;
-    padding: 10px;
-    color: white;
-}
-
-.h2noticias{
-    text-align: center;
-    padding: 10px;
-}
-
-.post{
+.login-button{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.imgpost{
-    width: 300px;
-}
-
-
-
-
-.bemvindo{
-    width: 90%;
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    text-justify: auto;
-    box-shadow: 3px 3px 5px var(--cor0);
-    text-align: center;
-}
-p.bemvindop{
-    width: 90%;
-    text-align: center;
-    text-align: justify; 
-    margin-bottom: 20px; 
-    padding: 2px;
-    font-family: var(--fonte-texto);
-    
-    
-}
-
-
-.boxcomercio{
-text-align: center;
-padding: 10px;
-
-}
-.comercios{
-    margin-top: 60px;
-   /* margin-right: 10px;
-    margin-left: 10px;*/
-    margin-bottom: 20px;
-    padding: 0px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #ffc15e;
-    box-shadow: 3px 3px 5px var(--cor0);
-    
-}
-/*.boxcomercio:hover{
-    transition: transform 0.4s, border .2s; 
-    transform: translate( 6px,-6px);
-}*/
-.comercios:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.pbox1{
-    position: relative;
-    left: 0px;
-    top: -50px;
-    text-justify: auto;
-    font-family: var(--fonte-texto);
-    
-}
-.logoloja{
-    position: relative;
-    width: 100px;
-    border-radius: 50%;
-    left: 0px;
-    top: -75px;
-}
-.h2comercio{
-    position: relative;
-    left: 0%;
-    top: -70px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 2px black;
-    font-family: var(--fonte-padrao);
-}
-.empregos{
-    margin-top: 75px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #00a6a6;
-    box-shadow: 3px 3px 5px var(--cor0);
-}
-.empregos:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.logoloja2{
-    position: relative;
-    width: 100px;
-    border-radius: 20%;
-    left: 0px;
-    top: -75px;
-}
-.h2emprego{
-    position: relative;
-    left: 0%;
-    top: -70px;
-    color:var(--cor3);
-    text-shadow: 1px 1px 2px black;
-    font-family: var(--fonte-padrao);
-}
-.servisos{
-    margin-top: 75px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #9a031e;
-    box-shadow: 3px 3px 5px var(--cor0);
-}
-.servisos:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.h2serviso{
-    position: relative;
-    left: 0%;
-    top: -70px;
-    color: var(--cor4);
-    text-shadow: 1px 1px 2px black;
-    font-family: var(--fonte-padrao);
-}
-.logoloja3{
-    position: relative;
-    width: 100px;
-    border-radius: 50%;
-    left: 0px;
-    top: -75px;
-}
-.anuncie{
-    margin-top: 75px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #29335c;
-    box-shadow: 3px 3px 5px var(--cor0);
-}
-.anuncie:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.logoanuncie{
-    position: relative;
-    width: 100px;
-    border-radius: 50%;
-    left: 0px;
-    top: -75px;
-    border: 3px solid #29335c ;
-}
-.h2anuncie{
-    position: relative;
-    left: 0%;
-    top: -70px;
-    color: var(--cor0);
-    text-shadow: 1px 1px 2px black;
-    font-family: var(--fonte-padrao);
-}
-.compraevenda{
-    margin-top: 75px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #ffc15e;
-    box-shadow: 3px 3px 5px var(--cor0);
-}
-.compraevenda:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.logocompra{
-    position: relative;
-    width: 100px;
-    border-radius: 50%;
-    left: 0px;
-    top: -75px;
-    border: 3px solid #29335c ;
-}
-.h2compra{
-    position: relative;
-    left: 0%;
-    top: -70px;
-    color: #ffc15e;
-    text-shadow: 1px 1px 2px black;
-    font-family: var(--fonte-padrao);
-}
-a.linkartigos{
-    text-decoration: none;
-    
-    
-}
-
-
-section.vagasdeemprego{
-    background-image: linear-gradient(to left,#cf9d4c , #ec9304 );
-    padding: 7px;
-    text-align: center;
-}
-.vagas{
-    margin-top: 3px;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--cor1);
-    
-}
-
-.bairrojaragua{
-    margin-top: 75px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #29335c;
-    box-shadow: 3px 3px 5px var(--cor0);
-    font-family: var(--fonte-padrao);
-}
-.bairrojaragua:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.picoeparque{
-    margin-top: 90px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    display: inline-grid;
-    width: 330px;
-    height: 180px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid var(--cor1);
-    box-shadow: 3px 3px 5px var(--cor0);
-    font-family: var(--fonte-padrao);
-}
-.picoeparque:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}
-.logopico{
-    position: relative;
-    width: 100px;
-    border-radius: 50%;
-    left: 0px;
-    top: -75px;
-    border: 3px solid #29335c ;
-}
-.h2pico{
-    position: relative;
-    left: 0%;
-    top: -80px;
-    color: var(--cor0);
-    text-shadow: 1px 1px 2px black;
-}
-.ppico{
-    position: relative;
-    left: 0px;
-    top: -75px;
-    text-justify: auto;
-    font-family: var(--fonte-texto);
-}
-.vagas{
-    margin-top: 3px;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--cor1);
-    
-    
-}
-.h1vagasdeemprego{
-    background-color: white;
-    border-radius: 20px;
-    font-family: var(--fonte-padrao);
-}
-.containeremp{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    
-}
-.vagasempregos{
-    margin: 20px;
-    width: 380px;
-    height: 195px;
-    background-color: white;
-    border-radius: 20px;
-    border: 4px solid #d70909;
-    box-shadow: 3px 3px 5px var(--cor0);
-}
-/*.boxcomercio:hover{
-    transition: transform 0.4s, border .2s; 
-    transform: translate( 6px,-6px);
-}
-.comercios:hover{
-    transform: translate( 2px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
-    transition: transform 0.4s, border .2s;
-}*/
-.pbox2{
-    position: relative;
-    left: 0px;
-    top: 5px;
-    text-justify: auto;
-    font-family: var(--fonte-texto);
-}
-
-.h2vagasemprego{
-    position: relative;
-    left: 0%;
-    top: 0px;
-    color: black;
-    
-
-}
-.containericon{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-}
-.valor{
-    position: relative;
-    display: flex;
-    margin: 10px;
-    top: 0px;
-   
-}
-.icondim{
-    width: 25px;
-    height: 25px;
-    margin-right: 7px;
-    
-}
-.efetivo{
-    position: relative;
-    display: flex;
-    margin: 10px;
-    top: 0px;
-   
-   
-}
-.iconclt{
-    width: 25px;
-    height: 25px;
-    margin-right: 7px;
-    
-}
-.semana{
-    display: flex;
-    position: relative;
-    top: -12px;
-    margin: 0px;
-   
-   
-}
-.iconrelogio{
-    text-align: center;
-    width: 25px;
-    height: 25px;
-    margin-left: 11px;
-    margin-right: 7px;
-}
-.cadastre-se{
-    display: flex;
-    justify-content: center;
-    background-color: green;
-    padding: 2px;
-    margin: 10px;
-    border-radius: 50px;
-    box-shadow: 3px 3px 10px black;
-}
-.cadastre-se:hover{
-    background-color: rgb(66, 143, 66);
-   
-}
-.iconcadastro{
-    width: 30px;
-    position: relative;
-    top: 1px;
-    margin-right: 10px;
-    
-}
-.h2cadastro{
-    position: relative;
-    top: 0px;
     color: white;
-    font-family: var(--fonte-padrao);
-    
-}
-.linkcadastro{
-    position: relative;
-    text-decoration: none;
-    top: -10px;
 }
 
-.maisvendidos{
-    background-color: black;
+.entrar{
+    
+}
+
+
+.login-button button{
+   border: none;
+   background-color: #4d0066 ;
+   padding: 0.4rem 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.login-button button:hover{
+    background-color: #00a6a6;
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
     color: white;
-    padding: 10px;
 }
 
-.maisvendidos h1{
-    text-align: left;
-}
-
-.anunciosamazon{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.amazon{
-    width: 250px;
-    padding: 10px;
-    
-    
-    
-}
-.amazon img{
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.152); 
-  cursor: pointer;
-  
-}
-
-.amazon h2,p{
-    color: black;
-    padding: 10px;
-}
-
-.aamazon{
-    text-decoration: none;
-}
-.preco{
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #4d0066;
+    position: absolute;
     border-radius: 10px;
 }
 
-.preco:hover{
-    color: white;
-    transform: scale(1.1);
-    transition: transform 0.6s; 
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
 
-.h2amazon:hover,
-.amazon p:hover{
-    text-decoration: underline;
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    
 }
-
 
 
 
