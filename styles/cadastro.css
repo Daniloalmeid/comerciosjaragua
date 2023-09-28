@@ -153,11 +153,12 @@ img.redes1:hover{
 /* menu fim */
 
 .containercadastro{
-    width: 80%;
-    height: 80vh;
+   
     display: flex;
     background-color: white;
     box-shadow: 5px 5px 10px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .form-image{
     width: 50%;
@@ -236,6 +237,7 @@ img.redes1:hover{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    padding: 10px;
     
 }
 .input-box input {
@@ -314,7 +316,9 @@ img.redes1:hover{
         display: none;
     }
     .containercadastro{
-        width: 50%;
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
     }
     .form{
