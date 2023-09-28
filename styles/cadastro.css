@@ -258,6 +258,15 @@ img.redes1:hover{
     font-weight: 600;
     color: #000000c0;
 }
+
+.dividir{
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #4d0066;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
 .input-box input::placeholder{
     color: #000000be;
 }
@@ -314,7 +323,7 @@ img.redes1:hover{
     }
     
 }
-@media screen and (max-width:676px) {
+@media screen and (max-width:900px) {
    .containercadastro{
     width: 90%;
     height: auto;
