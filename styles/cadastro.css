@@ -36,7 +36,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor1);
+    
 }
 section.redessociais{
     background-color: var(--cor0);
@@ -157,7 +157,7 @@ img.redes1:hover{
     width: 80%;
     height: 80vh;
     display: flex;
-    background-color: var(--cor3);
+    background-color: white;
     box-shadow: 5px 5px 10px black;
 }
 .form-image{
@@ -169,16 +169,17 @@ img.redes1:hover{
     padding: 1rem;
 }
 .form-image img{
-    width: 31rem;
+    width: 40rem;
 }
 
 .form{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: white;
+    padding: 3rem;
 }
 .form-header{
     margin-bottom: 3rem;
@@ -189,7 +190,7 @@ img.redes1:hover{
 .login-button{
     display: flex;
     align-items: center;
-    color: white;
+    
 }
 
 .entrar{
@@ -219,6 +220,7 @@ img.redes1:hover{
     display: block;
     width: 5rem;
     height: 0.3rem;
+    margin: 0 auto;
     background-color: #4d0066;
     position: absolute;
     border-radius: 10px;
@@ -228,7 +230,7 @@ img.redes1:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .input-box{
