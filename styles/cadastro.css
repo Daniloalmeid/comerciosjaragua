@@ -314,7 +314,7 @@ img.redes1:hover{
     }
     
 }
-@media screen and (max-width:1064px) {
+@media screen and (max-width:676px) {
    .containercadastro{
     width: 90%;
     height: auto;
