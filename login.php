@@ -1,31 +1,215 @@
-<?php 
-    //session_start();
-    //if(isset($_POST['submit']) && !empty($_POST//['email'])&& !empty($_POST['senha']))
-    //{   
-        //acessa
-        //include_once('config.php');
-        //$email = $_POST['email'];
-        //$senha = $_POST['senha'];
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comercios Jaragua
+    Descubra os melhores comércios e serviços do bairro Jaraguá, São Paulo, no ComerciosJaragua.">
+    <meta name="keywords" content="comercios-jaragua, pirituba, produtos-amazon,pico-do-jaragua,padarias-jaragua,mercados-jaragua, parque-do-jaragua">
 
-        //$sql = "SELECT * FROM cadastro WHERE //email = '$email' and senha = '$senha'";
+    <meta name="author" content="Danilo Almeida">
+    <title>CashBack Login</title>
+    <link rel="shortcut icon" href="imagen/favicon.ico" type="image/x-icon">
+    <link rel="image_src" href="imagen/favicon.ico"/>
+    <link rel="stylesheet" href="styles/cadastro.css">
 
-        //$result = $conexao->query($sql);
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7162415049579984"
+     crossorigin="anonymous"></script>
 
-        //if(mysqli_num_rows($result) < 1)
-        //{
-            //unset($_SESSION['email']);
-            //unset($_SESSION['senha']);
-            //header('Location:login.html');
-        //}
-        //else
-        //{
-            //$_SESSION['email'] = $email;
-            //$_SESSION['senha'] = $senha;
-            //header('Location:compra-e-venda.php');
-        //}
-    //}
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WEYMSX0CE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-?>
+  gtag('config', 'G-3WEYMSX0CE');
+</script>
+
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<body>
+    <header>
+        <section class="redessociais">
+            <h1 class="h1redessociais">Redes Socias</h1>
+            <a href="https://www.facebook.com/comerciosjaragua/" target="_blank"><img src="imagen/redessociais/logo-facebook.jpg" class="redes1" alt="Facebook, Comercios jaraguá"></a>
+            <a href="https://www.instagram.com/comercios_jaragua/" target="_blank"><img src="imagen/redessociais/logo-instagram.jpg" class="redes1" alt="Instagran,comercios jaraguá"></a>
+            <a href="https://twitter.com/comerciojaragua" target="_blank"><img src="imagen/redessociais/logo-twitter.jpg" class="redes1" alt="twitter, comercios jaraguá"></a>
+            <a href="https://www.youtube.com/@Comerciosjaragua" target="_blank"><img src="imagen/redessociais/logo-youtube.jpg" class="redes1" alt="youtube, comercios jaraguá sp"></a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511953658427" target="_blank"><img src="imagen/redessociais/watz.png" class="redes1" alt="whatapp, comercios jaraguá sp"></a>
+
+        </section>
+        <article>
+            <div class="logo">
+                <a href="index.html"><img src="imagen/cjlogo.png" class="logo1" alt=""></a>
+            </div>
+        </article>
+
+        <nav class="nav-bar">
+            <div class="nav-list">
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()">
+                        <img class="icon" src="imagen/menu/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </button>
+
+                </div>
+                <ul>
+                    <li class="nav-item"><a class="alink" href="index.html" class="nav-link">Inicio</a></li>
+
+                    <li class="nav-item"><a class="alink" href="comercio.html" class="nav-link">Comércios</a></li>
+
+                    <li class="nav-item"><a class="alink" href="servicos.html" class="nav-link">Serviços</a></li>
+
+                    <li class="nav-item"><a class="alink" href="cashback.html" class="nav-link">Comercios CashBack</a></li>
+
+                    <li class="nav-item"><a class="alink" href="contatos.html" class="nav-link">Contatos</a></li>
+
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <!--<button >
+                <img class="icon" src="imagens/menu/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            </button>-->
+            <ul class="ul-menu">
+                <li class="nav-item"><a class="alink" href="index.html" class="nav-link">Inicio</a></li>
+
+                <li class="nav-item"><a class="alink" href="comercio.html" class="nav-link">Comércios</a></li>
+
+                <li class="nav-item"><a class="alink" href="servicos.html" class="nav-link">Serviços</a></li>
+
+                <li class="nav-item"><a class="alink" href="cashback.html" class="nav-link">Comercios CashBack</a></li>
+
+                <li class="nav-item"><a class="alink" href="contatos.html" class="nav-link">Contatos</a></li>
+                    
+            </ul>
+        </div>
+
+    </header>
+
+        <main>
+            <div class="containercadastro">
+                <div class="form-image">
+                    <img src="imagen/cashback/cashback2.jpg" alt="CashBack">
+                </div>
+                <div class="form">
+                    <form action="Cadastro.php" method="post" class="">
+                        <div class="form-header">
+                            <div class="title">
+                                <h1>Login</h1>
+                            </div>
+                           
+                        </div>
+                        <div class="input-group">
+                            
+                            <div class="input-box">
+                                <label for="cpf">CPF:</label>
+                                <input type="email" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                            </div>
+                    
+                            
+                           
+                            <div class="input-box">
+                                <label for="senha">Senha:</label>
+                                <input type="senha" id="senha" name="senha" placeholder="Digite sua senha" required>
+                            </div>
+                           
+                        </div>
+                      
+                        <div class="continue-button">
+                            <button><a href="#">Continue</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
 
-<h2>ola</h2>
+           
+            
+            <!-- <section id="compras">
+                <h2>Registre Suas Compras</h2>
+                <form action="processa_compra.php" method="POST">
+                    <label for="valor">Valor da Compra:</label>
+                    <input type="number" id="valor" name="valor" required><br>
+            
+                    <label for="comercio">Comércio:</label>
+                    <select id="comercio" name="comercio" required>
+                        <option value="loja1">Loja 1</option>
+                        <option value="loja2">Loja 2</option>
+                        <!-- Adicione mais opções para outros comércios
+                    </select><br>
+            
+                    <input type="submit" value="Registrar Compra">
+                </form>
+            </section>
+            
+            <section id="saldo">
+                <h2>Seu Saldo de Cashback</h2>
+                <p>Seu saldo atual é: R$ <span id="saldo-atual">0.00</span></p>
+            </section> -->
+        </main>
+
+        <footer>
+            <div class="footer_contact">
+                <div>
+                    
+                    <h1 class="h1footer">Comércios Jaragua </h1>
+                    <div class="footer_social_media">
+                        <a href="https://www.facebook.com/comerciosjaragua/" target="_blank"><img src="imagen/redessociais/logo-facebook.jpg" class="redes2" alt=""></a>
+                        <a href="https://www.instagram.com/comercios_jaragua/" target="_blank"><img src="imagen/redessociais/logo-instagram.jpg" class="redes2" alt=""></a>
+                        <a href="https://twitter.com/comerciojaragua" target="_blank"><img src="imagen/redessociais/logo-twitter.jpg" class="redes2" alt=""></a>
+                        <a href="https://www.youtube.com/@Comerciosjaragua" target="_blank"><img src="imagen/redessociais/logo-youtube.jpg" class="redes2" alt=""></a>
+                        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511953658427" target="_blank"><img src="imagen/redessociais/watz.png" class="redes2" alt="whatapp"></a>
+                </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Site</h3>
+                    </li>
+                   
+                    <li>
+                        <a href="comercio.html" class="footer-link">Comércios</a>
+                    </li>
+                    <li>
+                        <a href="emprego.html" class="footer-link">Empregos</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html" class="footer-link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="anuncie.html" class="footer-link">Anúncie</a>
+                    </li>
+                    <li>
+                        <a href="compra-e-venda.html" class="footer-link">Compra e venda</a>
+                    </li>
+                    <li>
+                        <a href="bairro-jaragua.html" class="footer-link">Bairro Jaraguá</a>
+                    </li>
+                    <li>
+                        <a href="pico-do-jaragua.html" class="footer-link">Pico do Jaragua</a>
+                    </li>
+                    <li>
+                        <a href="pico-do-jaragua.html" class="footer-link">Parque do Jaraguá</a>
+                    </li>
+                
+                </ul>
+                <!-- <div id="input_group">
+                    <p>Entre com seu email para Receber novidades do bairro e comercios do Jaraguá</p>
+                    <input type="email" id="email">
+                    <button>
+                        <img src="imagen/redessociais/envelope.png" alt="">
+                    </button>
+                </div>-->
+    
+            </div>
+            <div id="footer_copyright">
+                &#169 
+                Todos os direitos reservado ao Comerciosjaraguá
+            </div>
+    
+        <footer>
+
+        <script src="js/menu.js"></script>
+</body>
