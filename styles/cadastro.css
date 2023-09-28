@@ -318,13 +318,12 @@ img.redes1:hover{
    .containercadastro{
     width: 90%;
     height: auto;
+    margin-top: 180px;
 
    }
    .input-group{
     flex-direction: column;
-    overflow-y: scroll;
     flex-wrap: nowrap;
-    max-height: 10rem;
     padding-right: 5rem;
 
    }
