@@ -153,7 +153,7 @@ img.redes1:hover{
 /* menu fim */
 
 .containercadastro{
-   
+   width: 90%;
     display: flex;
     background-color: white;
     box-shadow: 5px 5px 10px black;
