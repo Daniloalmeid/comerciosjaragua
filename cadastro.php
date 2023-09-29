@@ -11,7 +11,10 @@
     
 
 
-    $result = mysqli_query($conexao, "INSERT INTO nome, cpf, email, telefone, senha, confirmesenha, genero) VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha', '$confirmesenha', '$genero')");
+    // $result = mysqli_query($conexao, "INSERT INTO nome, cpf, email, telefone, senha, confirmesenha, genero) VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha', '$confirmesenha', '$genero')");
+
+    $result = mysqli_query($conexao, "INSERT INTO cadastro (nome, cpf, email, telefone, senha, confirmesenha, genero) VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha', '$confirmesenha', '$genero')");
+
 
 
     $sql ="INSERT INTO cadastro(nome, cpf, email, telefone, senha, confirmesenha, genero) VALUES ('$nome', '$cpf', '$email', '$telefone', '$senha', '$confirmesenha', '$genero')";
