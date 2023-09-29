@@ -138,7 +138,7 @@
                             </div>
                             <div class="input-box">
                                 <label for="cpf">CPF:</label>
-                                <input type="email" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                                <input type="cpf" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
                             </div>
                     
                             <div class="input-box">
@@ -181,7 +181,7 @@
                             </div>
                         </div>
                         <div class="continue-button">
-                            <button><a href="#">Continue</a></button>
+                            <input type="submit" value="Continuar">
                         </div>
                     </form>
                 </div>
