@@ -17,6 +17,18 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7162415049579984"
      crossorigin="anonymous"></script>
 
+     <!-- Adicione o link para a biblioteca jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Adicione o link para o arquivo CSS do Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Adicione o link para o arquivo CSS do tema padrão do Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Adicione o link para o arquivo JavaScript do Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WEYMSX0CE"></script>
@@ -61,11 +73,11 @@
 
                     <li class="nav-item"><a class="alink" href="servicos.html" class="nav-link">Serviços</a></li>
 
-                    <li class="nav-item"><a class="alink" href="cadastro.php" class="nav-link">Comercios CashBack</a></li>
+                    <!-- <li class="nav-item"><a class="alink" href="cadastro.php" class="nav-link">Comercios CashBack</a></li> -->
 
                     <li class="nav-item"><a class="alink" href="contatos.html" class="nav-link">Contatos</a></li>
 
-                    <li class="nav-item"><a class="alink" href="compra-e-venda.php" class="nav-link">teste</a></li>
+                    <!-- <li class="nav-item"><a class="alink" href="compra-e-venda.php" class="nav-link">teste</a></li> -->
 
 
                 </ul>
@@ -174,6 +186,13 @@
     
 
     <div class="column column-center">
+        <div class="carousel">
+            <!-- Conteúdo do carrossel aqui -->
+            <div><img src="imagen/carrocel/imagen1.jpeg" width="300" height="200" alt="Imagem 1"></div>
+            <div><img src="imagen/carrocel/imagen2.jpeg" width="300" height="200" alt="Imagem 2"></div>
+            <div><img src="imagen/carrocel/imagen3.jpeg" width="300" height="200" alt="Imagem 3"></div>
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
       <article class="boxcomercio">
           <div class="comercios">
               <a href="comercio.html" class="linkartigos">
@@ -181,11 +200,7 @@
               <h2 class="h2comercio">Comércios</h2>
               </a>
               <p class="pbox1">Encontre os Comércios e prestadores de serviços do Jaraguá. </p>
-
-              
-      
-      
-          </div>
+            </div>
 
          
           <div class="servisos">
@@ -238,7 +253,7 @@
           </div>
 
 <!-- anuncios amazon-->
-          <div class="maisvendidos">
+          <!-- <div class="maisvendidos">
             <h1>Mais vendidos Amazon</h1>
             <img src="imagen/auncios/anuncios_amazon.jpg" alt="Mais vendidos Amazon">
 
@@ -479,7 +494,7 @@
           </article>
       
       </article>
-    </div>
+    </div> -->
 
     
     <div class="column column-right">
@@ -499,6 +514,27 @@
       template:'<div class="post"><a href="{{link}}" target="_blank"><img class="imgpost" title="{{caption}}" src="{{image}}" /></a></div>'
     });
     feed.run();
+</script>
+
+ <!-- script carrocel -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.carousel').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
 </script>
 
 
