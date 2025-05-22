@@ -3,23 +3,39 @@
 
 /* Container Principal */
 .container-comercios {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
     padding: 0 20px;
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
+/* Categorias */
 .categorias {
     flex: 3;
+    min-width: 0;
 }
 
+.categorias h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    color: var(--cor0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Barra Lateral */
 .sidebar {
     flex: 1;
     background: var(--cor2);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 .sidebar h3 {
@@ -53,9 +69,10 @@
 /* Banners de Categorias */
 .categoria-banners {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
     margin-top: 20px;
+    align-items: stretch;
 }
 
 .categoria {
@@ -63,14 +80,17 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
     position: relative;
-    overflow: hidden;
 }
 
 .categoria:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .categoria::before {
@@ -84,9 +104,10 @@
 }
 
 .categoria:hover::before {
-    height: 10px;
+    height: 8px;
 }
 
+/* Cores Específicas por Categoria */
 .categoria-alimentos {
     border: 2px solid var(--cor0);
 }
@@ -167,11 +188,12 @@
     background: var(--cor5);
 }
 
+/* Estilos do Título e Subcategorias */
 .categoria h3 {
     font-family: var(--fonte-destaque);
     font-size: 1.6em;
     color: var(--cor0);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -179,10 +201,14 @@
 
 .subcategorias {
     list-style: none;
+    flex-grow: 1;
+    height: auto;
+    padding-right: 10px;
+    margin: 0;
 }
 
 .subcategorias li {
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .subcategorias a {
@@ -190,7 +216,7 @@
     font-size: 1em;
     color: var(--cor5);
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 4px;
     display: block;
     transition: background 0.2s ease, color 0.2s ease;
@@ -202,24 +228,38 @@
 }
 
 /* Responsividade */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .container-comercios {
         flex-direction: column;
+        gap: 30px;
     }
-    .categoria-banners {
-        grid-template-columns: repeat(2, 1fr);
+    .categorias {
+        width: 100%;
     }
     .sidebar {
-        margin-top: 20px;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .categoria-banners {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
     }
 }
 
 @media (max-width: 600px) {
     .categoria-banners {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .categoria {
+        min-height: 400px;
+        padding: 15px;
     }
     .categoria h3 {
         font-size: 1.4em;
+    }
+    .subcategorias li {
+        margin: 6px 0;
     }
     .sidebar h3 {
         font-size: 1.3em;
