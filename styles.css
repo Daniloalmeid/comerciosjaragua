@@ -21,6 +21,16 @@
     --fonte-texto: 'Crimson Pro', serif;
 }
 
+/* styles.css */
+:root {
+    --cor0: #29335c; /* Azul escuro */
+    --cor1: #ffc15e; /* Amarelo alaranjado */
+    --cor2: #f4faff; /* Branco azulado */
+    --cor3: #00a6a6; /* Turquesa */
+    --cor4: #9a031e; /* Vermelho escuro */
+    --cor5: #4f6d7a; /* Cinza azulado */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,8 +51,35 @@ header {
     padding: 20px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.icone-rede {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 header h1 {
     font-size: 2em;
+    margin: 10px 0;
 }
 
 nav {
@@ -68,68 +105,18 @@ nav a:hover {
     padding: 0 20px;
 }
 
-.comercio {
-    background: var(--cor2);
-    border: 1px solid var(--cor5);
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-.comercio-premium {
-    border: 2px solid var(--cor4);
-    background: var(--cor2);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.comercio h3 {
-    color: var(--cor0);
-}
-
-.formulario {
-    background: var(--cor2);
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid var(--cor5);
-}
-
-.formulario label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--cor5);
-}
-
-.formulario input, .formulario textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid var(--cor5);
-    border-radius: 4px;
-    background: var(--cor2);
-    color: var(--cor0);
-}
-
-.formulario button {
+.botao-destaque {
+    display: inline-block;
     background: var(--cor1);
     color: var(--cor0);
     padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.formulario button:hover {
-    background: var(--cor3);
-}
-
-.link-destaque {
-    color: var(--cor3);
-    font-weight: bold;
     text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
-.link-destaque:hover {
-    color: var(--cor1);
+.botao-destaque:hover {
+    background: var(--cor3);
 }
 
 /* Responsividade */
@@ -140,5 +127,16 @@ nav a:hover {
     nav a {
         display: block;
         margin: 10px 0;
+    }
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        height: 80px;
+    }
+    .icone-rede {
+        width: 30px;
+        height: 30px;
     }
 }
