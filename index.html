@@ -38,8 +38,8 @@
         </div>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="pages/comercios.html">Comércios</a></li>
-            <li><a href="pages/servicos.html">Serviços</a></li>
+            <li><a href="pages/diretorio.html">Comércios</a></li>
+            <li><a href="pages/diretorio.html">Serviços</a></li>
             <li><a href="pages/empregos.html">Empregos</a></li>
             <li><a href="pages/anuncie.html">Anuncie Conosco</a></li>
             <li><a href="pages/compra-venda.html">Compra e Venda</a></li>
@@ -51,12 +51,12 @@
     <div class="container">
         <h2>Bem-vindo ao Comércios Jaraguá</h2>
         <div class="banners">
-            <a href="pages/comercios.html" class="banner banner-comercios">
+            <a href="pages/diretorio.html" class="banner banner-comercios">
                 <img src="imagens/loja-1.png" alt="Comércios" class="banner-imagem">
                 <h1>Comércios</h1>
                 <p>Explore padarias, mercados, lojas e muito mais no Jaraguá!</p>
             </a>
-            <a href="pages/servicos.html" class="banner banner-servicos">
+            <a href="pages/diretorio.html" class="banner banner-servicos">
                 <img src="imagens/serviso-1.png" alt="Serviços" class="banner-imagem">
                 <h1>Serviços</h1>
                 <p>Encontre barbearias, salões de beleza e outros serviços locais.</p>
@@ -83,9 +83,43 @@
             </a>
         </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Comércios Jaraguá</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/diretorio.html">Diretório</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/comerciosjaragua" target="_blank">
+                        <img src="imagens/logo-instagram.png" alt="Instagram" class="icone-rede">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank">
+                        <img src="imagens/watz.png" alt="WhatsApp" class="icone-rede">
+                    </a>
+                    <a href="https://www.facebook.com/comerciosjaragua" target="_blank">
+                        <img src="imagens/logo-facebook.png" alt="Facebook" class="icone-rede">
+                    </a>
+                    <a href="https://x.com/comerciosjaragua" target="_blank">
+                        <img src="imagens/logo-twitter.png" alt="Twitter" class="icone-rede">
+                    </a>
+                </div>
+                <p>Contato: <a href="mailto:contato@comerciosjaragua.com">contato@comerciosjaragua.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Comércios Jaraguá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script>
         document.querySelector('.menu-toggle').addEventListener('click', () => {
             document.querySelector('.menu').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
         });
     </script>
 </body>
