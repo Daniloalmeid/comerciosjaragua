@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;1,200&display=swap');
 
+/* Variáveis */
 :root {
     --cor0: #29335c; /* Azul escuro */
     --cor1: #ffc15e; /* Amarelo alaranjado */
@@ -17,6 +18,7 @@
     --fonte-texto: 'Crimson Pro', serif;
 }
 
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +35,7 @@ body {
     min-height: 100vh;
 }
 
+/* Cabeçalho */
 header {
     background-color: var(--cor0);
     color: var(--cor2);
@@ -83,6 +86,7 @@ header p {
     font-size: 1.1em;
 }
 
+/* Navegação */
 nav {
     background-color: var(--cor5);
     padding: 10px;
@@ -99,6 +103,9 @@ nav {
     padding: 10px;
     z-index: 1000;
     position: relative;
+    /* Descomente para usar seu ícone personalizado */
+    /* background: url('imagens/menu-icon.png') no-repeat center; */
+    /* background-size: contain; */
 }
 
 .menu-toggle span {
@@ -114,12 +121,13 @@ nav {
 .menu-toggle {
     background: url('imagens/menu_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center;
     background-size: contain;
-    /* ... */
 }
 
 .menu-toggle.active {
     background: url('imagens/close.svg') no-repeat center;
-    background-size: contain;
+}
+.menu-toggle span {
+    display: none;
 }
 
 .menu-toggle span:last-child {
@@ -161,6 +169,7 @@ nav {
     color: var(--cor1);
 }
 
+/* Conteúdo Principal */
 .container {
     max-width: 900px;
     margin: 20px auto;
@@ -176,6 +185,7 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Página Inicial - Banners */
 .banners {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -244,6 +254,88 @@ nav {
     color: var(--cor5);
 }
 
+/* Página Comércios - Banners de Categorias */
+.banners-comercios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.banner-comercio {
+    background: var(--cor2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 280px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-comercio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.banner-comercio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--cor1);
+    transition: height 0.2s ease;
+}
+
+.banner-comercio:hover::before {
+    height: 10px;
+}
+
+.banner-alimentacao {
+    border: 2px solid var(--cor0);
+}
+
+.banner-moda {
+    border: 2px solid var(--cor1);
+}
+
+.banner-eletronicos {
+    border: 2px solid var(--cor3);
+}
+
+.banner-casa {
+    border: 2px solid var(--cor4);
+}
+
+.banner-saude {
+    border: 2px solid var(--cor5);
+}
+
+.banner-variedades {
+    border: 2px solid var(--cor0);
+}
+
+.banner-comercio h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.6em;
+    color: var(--cor0);
+    margin-bottom: 10px;
+}
+
+.banner-comercio p {
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    color: var(--cor5);
+}
+
+/* Rodapé */
 footer {
     background-color: var(--cor0);
     color: var(--cor2);
@@ -314,7 +406,7 @@ footer {
 
 /* Responsividade */
 @media (max-width: 900px) {
-    .banners {
+    .banners, .banners-comercios {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -358,10 +450,10 @@ footer {
         display: block;
         margin: 10px 0;
     }
-    .banners {
+    .banners, .banners-comercios {
         grid-template-columns: 1fr;
     }
-    .banner {
+    .banner, .banner-comercio {
         max-width: 100%;
     }
     .container h2 {

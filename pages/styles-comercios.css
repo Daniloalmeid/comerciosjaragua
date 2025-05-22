@@ -1,0 +1,227 @@
+/* pages/styles-comercios.css */
+@charset "UTF-8";
+
+/* Container Principal */
+.container-comercios {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.categorias {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    background: var(--cor2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    color: var(--cor0);
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.sidebar a {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: var(--cor1);
+}
+
+.lightwidget-widget {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* Banners de Categorias */
+.categoria-banners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.categoria {
+    background: linear-gradient(180deg, var(--cor2), rgba(255, 255, 255, 0.9));
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.categoria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    transition: height 0.2s ease;
+}
+
+.categoria:hover::before {
+    height: 10px;
+}
+
+.categoria-alimentos {
+    border: 2px solid var(--cor0);
+}
+
+.categoria-alimentos::before {
+    background: var(--cor0);
+}
+
+.categoria-varejo {
+    border: 2px solid var(--cor1);
+}
+
+.categoria-varejo::before {
+    background: var(--cor1);
+}
+
+.categoria-saude {
+    border: 2px solid var(--cor3);
+}
+
+.categoria-saude::before {
+    background: var(--cor3);
+}
+
+.categoria-roupas {
+    border: 2px solid var(--cor4);
+}
+
+.categoria-roupas::before {
+    background: var(--cor4);
+}
+
+.categoria-casa {
+    border: 2px solid var(--cor5);
+}
+
+.categoria-casa::before {
+    background: var(--cor5);
+}
+
+.categoria-tecnologia {
+    border: 2px solid var(--cor0);
+}
+
+.categoria-tecnologia::before {
+    background: var(--cor0);
+}
+
+.categoria-presentes {
+    border: 2px solid var(--cor1);
+}
+
+.categoria-presentes::before {
+    background: var(--cor1);
+}
+
+.categoria-automotivo {
+    border: 2px solid var(--cor3);
+}
+
+.categoria-automotivo::before {
+    background: var(--cor3);
+}
+
+.categoria-pet {
+    border: 2px solid var(--cor4);
+}
+
+.categoria-pet::before {
+    background: var(--cor4);
+}
+
+.categoria-educacao {
+    border: 2px solid var(--cor5);
+}
+
+.categoria-educacao::before {
+    background: var(--cor5);
+}
+
+.categoria h3 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.6em;
+    color: var(--cor0);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subcategorias {
+    list-style: none;
+}
+
+.subcategorias li {
+    margin: 5px 0;
+}
+
+.subcategorias a {
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    color: var(--cor5);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: block;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.subcategorias a:hover {
+    background: var(--cor1);
+    color: var(--cor2);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .container-comercios {
+        flex-direction: column;
+    }
+    .categoria-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sidebar {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .categoria-banners {
+        grid-template-columns: 1fr;
+    }
+    .categoria h3 {
+        font-size: 1.4em;
+    }
+    .sidebar h3 {
+        font-size: 1.3em;
+    }
+}
