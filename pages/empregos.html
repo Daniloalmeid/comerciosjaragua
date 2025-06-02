@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércios Jaraguá - Empregos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles-comercios.css">
+    <meta name="description" content="Encontre vagas de emprego no bairro Jaraguá, São Paulo! Oportunidades atualizadas.">
+    <meta name="keywords" content="vagas Jaraguá, empregos Jaraguá, São Paulo">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../imagens/cjlogo.png" alt="Logo Comércios Jaraguá" class="logo">
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/comerciosjaragua" target="_blank">
+                    <img src="../imagens/logo-instagram.png" alt="Instagram" class="icone-rede">
+                </a>
+                <a href="https://wa.me/5511999999999" target="_blank">
+                    <img src="../imagens/watz.png" alt="WhatsApp" class="icone-rede">
+                </a>
+                <a href="https://x.com/comerciosjaragua" target="_blank">
+                    <img src="../imagens/logo-twitter.png" alt="X" class="icone-rede">
+                </a>
+                <a href="https://www.youtube.com/@comerciosjaragua" target="_blank">
+                    <img src="../imagens/logo-youtube.png" alt="YouTube" class="icone-rede">
+                </a>
+            </div>
+        </div>
+        <h1>Comércios Jaraguá</h1>
+        <p>Descubra oportunidades de emprego no bairro Jaraguá, São Paulo!</p>
+    </header>
+    <nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="comercios.html">Comércios</a></li>
+            <li><a href="diretorio.html">Serviços</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
+            <li><a href="anuncie.html">Anuncie Conosco</a></li>
+            <li><a href="compra-venda.html">Compra e Venda</a></li>
+            <li><a href="pico-jaragua.html">Pico do Jaraguá</a></li>
+            <li><a href="diretorio.html">Diretório</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container-comercios">
+        <div class="categorias">
+            <h2>Vagas de Emprego no Jaraguá</h2>
+            <div class="job-banners">
+                <!-- Vagas carregadas dinamicamente via JavaScript -->
+            </div>
+        </div>
+        <aside class="sidebar">
+            <h3 class="sidebar-title">
+                <img src="../imagens/logo-instagram.png" alt="Instagram Icon" class="sidebar-icon"> Nossos Posts no Instagram
+            </h3>
+            <div class="instagram-widget">
+                <iframe src="//lightwidget.com/widgets/2487203b29b45eeb937fc027a207b624.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            </div>
+            <a href="https://www.instagram.com/comerciosjaragua" target="_blank" class="botao-instagram">Siga-nos no Instagram</a>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Comércios Jaraguá</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="diretorio.html">Diretório</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/comerciosjaragua" target="_blank">
+                        <img src="../imagens/logo-instagram.png" alt="Instagram" class="icone-rede">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank">
+                        <img src="../imagens/watz.png" alt="WhatsApp" class="icone-rede">
+                    </a>
+                    <a href="https://x.com/comerciosjaragua" target="_blank">
+                        <img src="../imagens/logo-twitter.png" alt="X" class="icone-rede">
+                    </a>
+                    <a href="https://www.youtube.com/@comerciosjaragua" target="_blank">
+                        <img src="../imagens/logo-youtube.png" alt="YouTube" class="icone-rede">
+                    </a>
+                </div>
+                <p>Contato: <a href="mailto:contato@comerciosjaragua.com">contato@comerciosjaragua.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Comércios Jaraguá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+        });
+
+        // Carregar vagas dinamicamente
+        fetch('jobs.json')
+            .then(response => response.json())
+            .then(jobs => {
+                const jobContainer = document.querySelector('.job-banners');
+                jobs.forEach(job => {
+                    const jobElement = document.createElement('div');
+                    jobElement.className = 'categoria';
+                    jobElement.innerHTML = `
+                        <h3>${job.title}</h3>
+                        <p class="info">Empresa: ${job.company}</p>
+                        <p class="info"><a href="${job.link}" target="_blank">Candidatar-se</a></p>
+                    `;
+                    jobContainer.appendChild(jobElement);
+                });
+            })
+            .catch(error => console.error('Erro ao carregar vagas:', error));
+    </script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js?nocache=<%= Date.now() %>"></script>
+</body>
+</html>

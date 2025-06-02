@@ -3,55 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diretório - Comércios Jaraguá</title>
+    <title>Comércios Jaraguá - Serviços</title>
     <link rel="stylesheet" href="../styles.css">
-    <meta name="description" content="Lista de comércios do bairro Jaraguá, São Paulo: padarias, barbearias, restaurantes e mais.">
-    <meta name="keywords" content="comércios Jaraguá, padaria Jaraguá, barbearia Jaraguá, São Paulo">
+    <link rel="stylesheet" href="styles-comercios.css"> <!-- Reutilizando styles-comercios.css -->
+    <meta name="description" content="Encontre os melhores serviços no bairro Jaraguá, São Paulo: manutenção, beleza, educação e mais!">
+    <meta name="keywords" content="serviços Jaraguá, manutenção Jaraguá, São Paulo">
 </head>
 <body>
     <header>
+        <div class="header-container">
+            <img src="../imagens/cjlogo.png" alt="Logo Comércios Jaraguá" class="logo">
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/comerciosjaragua" target="_blank">
+                    <img src="../imagens/logo-instagram.png" alt="Instagram" class="icone-rede">
+                </a>
+                <a href="https://wa.me/5511999999999" target="_blank">
+                    <img src="../imagens/watz.png" alt="WhatsApp" class="icone-rede">
+                </a>
+                <a href="https://x.com/comerciosjaragua" target="_blank">
+                    <img src="../imagens/logo-twitter.png" alt="X" class="icone-rede">
+                </a>
+                <a href="https://www.youtube.com/@comerciosjaragua" target="_blank">
+                    <img src="../imagens/logo-youtube.png" alt="YouTube" class="icone-rede">
+                </a>
+            </div>
+        </div>
         <h1>Comércios Jaraguá</h1>
-        <p>Explore os comércios locais do bairro Jaraguá</p>
+        <p>Explore os serviços disponíveis no bairro Jaraguá, São Paulo!</p>
     </header>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="diretorio.html">Diretório</a>
-        <a href="contato.html">Contato</a>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="comercios.html">Comércios</a></li>
+            <li><a href="diretorio.html">Serviços</a></li>
+            <li><a href="empregos.html">Empregos</a></li>
+            <li><a href="anuncie.html">Anuncie Conosco</a></li>
+            <li><a href="compra-venda.html">Compra e Venda</a></li>
+            <li><a href="pico-jaragua.html">Pico do Jaraguá</a></li>
+            <li><a href="diretorio.html">Diretório</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
     </nav>
-    <div class="container">
-        <h2>Diretório de Comércios</h2>
-        <h3>Padarias</h3>
-        <div class="comercio comercio-premium">
-            <h3>Padaria Nova Jaraguá</h3>
-            <p><strong>Categoria:</strong> Padaria</p>
-            <p><strong>Endereço:</strong> Av. Dr. Felipe Pinel, 211, Jaraguá</p>
-            <p><strong>Telefone:</strong> (11) 3942-0018</p>
-            <p><strong>Descrição:</strong> Pães frescos, bolos e café da manhã delicioso todos os dias!</p>
+    <div class="container-comercios">
+        <div class="categorias">
+            <h2>Categorias de Serviços</h2>
+            <div class="categoria-banners">
+                <div class="categoria categoria-manutencao">
+                    <h3>🛠️ Manutenção Residencial</h3>
+                    <ul class="subcategorias">
+                        <li><a href="eletricista.html">Eletricista</a></li>
+                        <li><a href="encanador.html">Encanador</a></li>
+                        <li><a href="pintor.html">Pintor</a></li>
+                        <li><a href="marceneiro.html">Marceneiro</a></li>
+                        <li><a href="pedreiro.html">Pedreiro</a></li>
+                        <li><a href="serralheiro.html">Serralheiro</a></li>
+                    </ul>
+                </div>
+                <div class="categoria categoria-beleza">
+                    <h3>💇 Beleza e Estética</h3>
+                    <ul class="subcategorias">
+                        <li><a href="cabeleireiro.html">Cabeleireiro</a></li>
+                        <li><a href="manicure.html">Manicure</a></li>
+                        <li><a href="estetica.html">Clínica de Estética</a></li>
+                        <li><a href="barbearia.html">Barbearia</a></li>
+                        <li><a href="maquiagem.html">Maquiagem</a></li>
+                    </ul>
+                </div>
+                <div class="categoria categoria-educacao">
+                    <h3>📚 Educação e Treinamento</h3>
+                    <ul class="subcategorias">
+                        <li><a href="idiomas.html">Escola de Idiomas</a></li>
+                        <li><a href="musica.html">Escola de Música</a></li>
+                        <li><a href="cursos.html">Cursos Profissionalizantes</a></li>
+                        <li><a href="reforco.html">Reforço Escolar</a></li>
+                    </ul>
+                </div>
+                <div class="categoria categoria-automotive">
+                    <h3>🚗 Serviços Automotivos</h3>
+                    <ul class="subcategorias">
+                        <li><a href="mecanico.html">Mecânico</a></li>
+                        <li><a href="funilaria.html">Funilaria e Pintura</a></li>
+                        <li><a href="lavarapido.html">Lava Rápido</a></li>
+                        <li><a href="borracharia.html">Borracharia</a></li>
+                    </ul>
+                </div>
+                <div class="categoria categoria-saude">
+                    <h3>🏥 Saúde e Bem-estar</h3>
+                    <ul class="subcategorias">
+                        <li><a href="clinica.html">Clínica Médica</a></li>
+                        <li><a href="dentista.html">Dentista</a></li>
+                        <li><a href="fisioterapia.html">Fisioterapia</a></li>
+                        <li><a href="psicologia.html">Psicologia</a></li>
+                    </ul>
+                </div>
+                <div class="categoria categoria-eventos">
+                    <h3>🎉 Eventos e Festas</h3>
+                    <ul class="subcategorias">
+                        <li><a href="buffet.html">Buffet</a></li>
+                        <li><a href="decoracao.html">Decoração de Festas</a></li>
+                        <li><a href="fotografia.html">Fotografia</a></li>
+                        <li><a href="musica.html">Música ao Vivo</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <h3>Barbearias</h3>
-        <div class="comercio">
-            <h3>Barbearia Don Barba</h3>
-            <p><strong>Categoria:</strong> Barbearia</p>
-            <p><strong>Endereço:</strong> Estr. de Taipas, 1350, Jaraguá</p>
-            <p><strong>Telefone:</strong> (11) 96345-6789</p>
-            <p><strong>Descrição:</strong> Cortes modernos e ambiente descontraído.</p>
-        </div>
-        <h3>Restaurantes</h3>
-        <div class="comercio">
-            <h3>Restaurante Cantinho do Jaraguá</h3>
-            <p><strong>Categoria:</strong> Restaurante</p>
-            <p><strong>Endereço:</strong> Estr. de Taipas, 1800, Jaraguá</p>
-            <p><strong>Telefone:</strong> (11) 3941-2345</p>
-            <p><strong>Descrição:</strong> Comida caseira e pizzas artesanais para toda a família.</p>
-        </div>
-        <h3>Mercados</h3>
-        <div class="comercio">
-            <h3>Mercado Bom Preço</h3>
-            <p><strong>Categoria:</strong> Mercado</p>
-            <p><strong>Endereço:</strong> Av. Raimundo Pereira de Magalhães, 1234, Jaraguá</p>
-            <p><strong>Telefone:</strong> (11) 5555-4444</p>
-            <p><strong>Descrição:</strong> Variedade de produtos com preços acessíveis.</p>
-        </div>
+        <aside class="sidebar">
+            <h3 class="sidebar-title">
+                <img src="../imagens/logo-instagram.png" alt="Instagram Icon" class="sidebar-icon"> Nossos Posts no Instagram
+            </h3>
+            <!-- Widget do Instagram (igual a comercios.html) -->
+            <div class="instagram-widget">
+                <iframe src="//lightwidget.com/widgets/2487203b29b45eeb937fc027a207b624.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            </div>
+            <a href="https://www.instagram.com/comerciosjaragua" target="_blank" class="botao-instagram">Siga-nos no Instagram</a>
+        </aside>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Comércios Jaraguá</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="diretorio.html">Diretório</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/comerciosjaragua" target="_blank">
+                        <img src="../imagens/logo-instagram.png" alt="Instagram" class="icone-rede">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank">
+                        <img src="../imagens/watz.png" alt="WhatsApp" class="icone-rede">
+                    </a>
+                    <a href="https://x.com/comerciosjaragua" target="_blank">
+                        <img src="../imagens/logo-twitter.png" alt="X" class="icone-rede">
+                    </a>
+                    <a href="https://www.youtube.com/@comerciosjaragua" target="_blank">
+                        <img src="../imagens/logo-youtube.png" alt="YouTube" class="icone-rede">
+                    </a>
+                </div>
+                <p>Contato: <a href="mailto:contato@comerciosjaragua.com">contato@comerciosjaragua.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Comércios Jaraguá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+        });
+    </script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js?nocache=<%= Date.now() %>"></script>
 </body>
 </html>

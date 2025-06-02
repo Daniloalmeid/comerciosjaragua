@@ -209,6 +209,7 @@
             <h3 class="sidebar-title">
                 <img src="../imagens/logo-instagram.png" alt="Instagram Icon" class="sidebar-icon"> Nossos Posts no Instagram
             </h3>
+            <!-- Widget do Instagram (igual a comercios.html) -->
             <div class="instagram-widget">
                 <iframe src="//lightwidget.com/widgets/2487203b29b45eeb937fc027a207b624.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
             </div>
@@ -254,6 +255,6 @@
             document.querySelector('.menu-toggle').classList.toggle('active');
         });
     </script>
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js?nocache=<%= Date.now() %>"></script>
 </body>
 </html>
